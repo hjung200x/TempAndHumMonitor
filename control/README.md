@@ -1,36 +1,59 @@
-#
-# SDL_Pi_AM2315
-#
-# AM2315 Pure Python Library
-# SwitchDoc Labs March 2019
-#
-#
-Version 1.6:  August 12, 2019 - Added adasmbus and improved I2C reliablity<BR>
-Version 1.5:  June 6, 2019 - Moved to adasmbus and improved I2C reliablity<BR>
-Version 1.4:  March 30, 2019 - Added PowerSave capability and improved temperature detection<BR>
-Version 1.3:  February 6, 2019 - increased MaxRetries to 10 per Sopwith - Updated to Python 3 <BR>
-Version 1.2:  November 26, 2018 - Added bad data filter, now can return statistics good, bad reads, bad CRC<BR>
-Version 1.1:  November 14, 2018 - Added CRC Check.  Now returns -1 in CRC on CRC Fail <BR>
- 
+32비트 라즈비안 설치할것!!
 
-#Introduction
-This is a pure python AM2315 library to replace the tentacle_pi C based library
+[계정 생성]
+$ sudo adduser hjung
+$ sudo passwd hjung
 
-For the SwitchDoc Labs AM2315<BR>
-https://shop.switchdoc.com/products/grove-am2315-encased-i2c-temperature-humidity-sensor-for-raspberry-pi-arduino
+[생성된 계정으로 login]
+지금부터는 생성된 계정으로 실행한다.
 
-#Installation
+[파이썬 가상 환경 설치]
+$ sudo apt update
+$ sudo apt install python3-dev python3-venv python3-pip
+$ python -m venv Achamber
+$ source Achamber/bin/activate
+
+[필요한 모듈 설치하기]
+$ pip install RPi.GPIO
+$ pip install Adafruit_DHT
+$ pip install smbus2
+$ sudo pip install Adafruit_DHT
+$ sudo pip install smbus2
 
 
-Place files in program directory
+[Django, uwsgi, nginx 설치]
+$ pip install Django
+$ pip install uwsgi
+$ sudo apt install nginx
 
-# testing
+[uwsgi 서비스 등록하기]
+$ sudo cp /home/hjung/proj/Achamber/achamber_web/.config/uwsgi/uwsgi.service /etc/systemd/system
+$ sudo systemctl daemon-reload
+$ sudo systemctl enable uwsgi.service
+$ sudo systemctl start uwsgi.service
 
-```
-import AM2315 
-sens = AM2315.AM2315()
-print sens.read_temperature()
-print sens.read_humidity()
-print sens.read_humidity_temperature()
-print sens.read_humidity_temperature_crc()
-```
+[nginx 사이트 추가하기]
+$ sudo vi /etc/nginx/sites-available/default 에 아래 부분 추가
+
+        location / {
+                uwsgi_pass unix:///home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock;
+                include uwsgi_params;
+        }
+
+
+        location /static/ {
+                alias /home/hjung/proj/Achamber/achamber_web/static/;
+        }
+
+$ sudo nginx -t
+$ sudo systemctl restart nginx
+
+[방화벽 포트 추가하기]
+$ sudo apt install ufw
+$ sudo ufw delete allow 8000
+$ sudo ufw allow 'Nginx Full'
+
+
+https://wikidocs.net/6611
+
+
