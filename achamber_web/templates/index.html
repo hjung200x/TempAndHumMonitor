@@ -1,0 +1,45 @@
+{% extends "base_generic.html" %}
+
+{% block head %}
+{% if config_run.value != status_run.value %}
+  <meta http-equiv="refresh" content="1; url={% url 'index' %}">
+{% endif %}
+{% endblock %}
+
+{% block content %}
+  {% load humanize %}
+  <div class="home" style="width: 1200px; height: 700px; vertical-align: middle;">
+    <div class="operation" style="width: auto; height: auto; float: left; border-radius: 30px; border: 8px solid #ffcc80; white-space:nowrap; padding: 30px;">
+      <form action="{% url 'index' %}" method="POST" id="operation">
+        {% csrf_token %}
+        <p style="text-align: center;">
+        <label class="toggleSwitch xlarge" onclick="">
+              <input type="checkbox" name="is_run" onchange="this.form.submit()" {% if config_run.value == '1' %}checked{% endif %} />
+              <span>
+                  <span>Stop</span>
+                  <span>Running</span>
+              </span>
+              <a></a>
+          </label>
+      </p>
+      {% if config_run.value == '1' %}
+      <P style="text-align: center;"">
+        <span style="font-size: 3.0em; color: #ff9800;"><strong>Start Time </strong></span>
+        <span style="font-size: 2.5em; color: #0d6aa8;">{% if config_run.value == status_run.value %} {{ status_start_time.value }}{% else %}Wait to start...{% endif %}</span>
+      </P>
+      {% else %}
+      <P style="text-align: center;">
+        <span style="font-size: 3.0em; color: #ff9800;"><strong>Start Time </strong></span>
+        <span style="font-size: 2.2em; color: #0d6aa8;"> {{ status_start_time.value }}</span>
+      </P>
+      <P style="text-align: center;">
+        <span style="font-size: 3.0em; color: #ff9800;"><strong>End Time </strong></span>
+        <span style="font-size: 2.2em; color: #0d6aa8;"> {% if config_run.value == status_run.value %}{{ status_end_time.value }}{% else %}Wait to stop...{% endif %}</span>
+      </P>
+      {% endif %}
+      </form>
+    </div>
+    <div class="title-purchase-items" style="width: 20%; float: left; margin-right: 30px;">
+    </div>
+  </div>
+{% endblock %}

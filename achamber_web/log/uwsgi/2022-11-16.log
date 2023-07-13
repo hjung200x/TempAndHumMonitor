@@ -1,0 +1,78 @@
+*** Starting uWSGI 2.0.20 (32bit) on [Wed Nov 16 14:17:21 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x97e890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 10302 seconds on interpreter 0x97e890 pid: 314 (default app)
+spawned uWSGI master process (pid: 314)
+spawned uWSGI worker 1 (pid: 492, cores: 1)
+subprocess 336 exited with code 0
+*** Starting uWSGI 2.0.20 (32bit) on [Wed Nov 16 17:09:41 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1b59890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 62468 seconds on interpreter 0x1b59890 pid: 316 (default app)
+spawned uWSGI master process (pid: 316)
+spawned uWSGI worker 1 (pid: 495, cores: 1)
+subprocess 336 exited with code 0
+[pid: 495|app: 0|req: 1/1] 192.168.1.59 () {42 vars in 840 bytes} [Thu Nov 17 10:42:29 2022] GET /config/ => generated 4832 bytes in 1807 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 495|app: 0|req: 2/2] 192.168.1.59 () {42 vars in 728 bytes} [Thu Nov 17 10:42:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 186 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 495|app: 0|req: 3/3] 192.168.1.59 () {42 vars in 785 bytes} [Thu Nov 17 10:42:31 2022] GET /favicon.ico => generated 3046 bytes in 280 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 4/4] 192.168.1.59 () {44 vars in 869 bytes} [Thu Nov 17 10:42:59 2022] GET / => generated 4376 bytes in 287 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 5/5] 192.168.1.59 () {42 vars in 721 bytes} [Thu Nov 17 10:43:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 6/6] 192.168.1.59 () {52 vars in 1042 bytes} [Thu Nov 17 10:43:01 2022] POST / => generated 4207 bytes in 236 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 7/7] 192.168.1.59 () {42 vars in 721 bytes} [Thu Nov 17 10:43:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 8/8] 192.168.1.59 () {46 vars in 893 bytes} [Thu Nov 17 10:43:02 2022] GET / => generated 4161 bytes in 262 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 9/9] 192.168.1.59 () {42 vars in 721 bytes} [Thu Nov 17 10:43:03 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 10/10] 192.168.1.59 () {44 vars in 876 bytes} [Thu Nov 17 11:04:58 2022] GET /config/ => generated 4832 bytes in 294 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 11/11] 192.168.1.59 () {42 vars in 728 bytes} [Thu Nov 17 11:04:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 321 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 12/12] 192.168.1.59 () {52 vars in 1065 bytes} [Thu Nov 17 11:05:03 2022] POST /config/ => generated 4982 bytes in 367 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 13/13] 192.168.1.59 () {42 vars in 728 bytes} [Thu Nov 17 11:05:03 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 495|app: 0|req: 14/14] 192.168.1.59 () {52 vars in 1065 bytes} [Thu Nov 17 11:14:32 2022] POST /config/ => generated 4982 bytes in 362 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 495|app: 0|req: 15/15] 192.168.1.59 () {42 vars in 728 bytes} [Thu Nov 17 11:14:32 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)

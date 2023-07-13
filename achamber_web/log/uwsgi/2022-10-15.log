@@ -1,0 +1,1181 @@
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 18:59:00 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/hjung/proj/Achamber/achamber_web
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/achamber_web.sock fd 3
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xd65fd0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0xd65fd0 pid: 1030 (default app)
+spawned uWSGI master process (pid: 1030)
+spawned uWSGI worker 1 (pid: 1077, cores: 1)
+subprocess 1033 exited with code 0
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 19:00:02 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/hjung/proj/Achamber/achamber_web
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/achamber_web.sock fd 3
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1617fd0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1617fd0 pid: 1386 (default app)
+spawned uWSGI master process (pid: 1386)
+spawned uWSGI worker 1 (pid: 1437, cores: 1)
+subprocess 1387 exited with code 0
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 19:01:55 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1dbc820
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1dbc820 pid: 2005 (default app)
+spawned uWSGI master process (pid: 2005)
+spawned uWSGI worker 1 (pid: 2050, cores: 1)
+subprocess 2006 exited with code 0
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 19:03:22 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xd1c820
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xd1c820 pid: 2511 (default app)
+spawned uWSGI master process (pid: 2511)
+spawned uWSGI worker 1 (pid: 2556, cores: 1)
+subprocess 2512 exited with code 0
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 19:06:19 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xe0d890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0xe0d890 pid: 3208 (default app)
+spawned uWSGI master process (pid: 3208)
+spawned uWSGI worker 1 (pid: 3253, cores: 1)
+subprocess 3209 exited with code 0
+Invalid HTTP_HOST header: '192.168.0.21'. You may need to add '192.168.0.21' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.21'. You may need to add '192.168.0.21' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 3253|app: 0|req: 1/1] 192.168.0.18 () {42 vars in 756 bytes} [Sat Oct 15 19:06:33 2022] GET / => generated 57047 bytes in 1670 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.0.21'. You may need to add '192.168.0.21' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.21'. You may need to add '192.168.0.21' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[pid: 3253|app: 0|req: 2/2] 192.168.0.18 () {40 vars in 677 bytes} [Sat Oct 15 19:06:35 2022] GET /favicon.ico => generated 56972 bytes in 1522 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 19:07:03 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x140c890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x140c890 pid: 3456 (default app)
+spawned uWSGI master process (pid: 3456)
+spawned uWSGI worker 1 (pid: 3503, cores: 1)
+subprocess 3457 exited with code 0
+[pid: 3503|app: 0|req: 1/1] 192.168.0.18 () {42 vars in 756 bytes} [Sat Oct 15 19:07:15 2022] GET / => generated 10681 bytes in 439 msecs (HTTP/1.1 200) 6 headers in 209 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 3503|app: 0|req: 2/2] 192.168.0.18 () {40 vars in 677 bytes} [Sat Oct 15 19:07:16 2022] GET /favicon.ico => generated 2114 bytes in 254 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 19:11:13 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x15f3890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x15f3890 pid: 4801 (default app)
+spawned uWSGI master process (pid: 4801)
+spawned uWSGI worker 1 (pid: 4846, cores: 1)
+subprocess 4802 exited with code 0
+[pid: 4846|app: 0|req: 1/1] 192.168.0.18 () {40 vars in 735 bytes} [Sat Oct 15 19:11:27 2022] GET /admin => generated 0 bytes in 134 msecs (HTTP/1.1 301) 6 headers in 216 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 2/2] 192.168.0.18 () {40 vars in 737 bytes} [Sat Oct 15 19:11:27 2022] GET /admin/ => generated 0 bytes in 550 msecs (HTTP/1.1 302) 10 headers in 372 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 3/3] 192.168.0.18 () {40 vars in 774 bytes} [Sat Oct 15 19:11:28 2022] GET /admin/login/?next=/admin/ => generated 2222 bytes in 1255 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 4/4] 192.168.0.18 () {52 vars in 1074 bytes} [Sat Oct 15 19:11:35 2022] POST /admin/login/?next=/admin/ => generated 0 bytes in 5671 msecs (HTTP/1.1 302) 12 headers in 634 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 5/5] 192.168.0.18 () {46 vars in 930 bytes} [Sat Oct 15 19:11:41 2022] GET /admin/ => generated 4248 bytes in 515 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 6/6] 192.168.0.18 () {44 vars in 914 bytes} [Sat Oct 15 19:11:48 2022] GET /admin/config/configtbl/ => generated 5427 bytes in 859 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 7/7] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 19:11:49 2022] GET /admin/jsi18n/ => generated 3343 bytes in 146 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 8/8] 192.168.0.18 () {44 vars in 939 bytes} [Sat Oct 15 19:12:01 2022] GET /admin/config/configtbl/add/ => generated 6522 bytes in 777 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 9/9] 192.168.0.18 () {42 vars in 748 bytes} [Sat Oct 15 19:12:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 125 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 10/10] 192.168.0.18 () {52 vars in 1125 bytes} [Sat Oct 15 19:13:10 2022] POST /admin/config/configtbl/add/ => generated 0 bytes in 228 msecs (HTTP/1.1 302) 11 headers in 696 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 11/11] 192.168.0.18 () {46 vars in 1251 bytes} [Sat Oct 15 19:13:10 2022] GET /admin/config/configtbl/add/ => generated 6802 bytes in 487 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 12/12] 192.168.0.18 () {42 vars in 748 bytes} [Sat Oct 15 19:13:10 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 13/13] 192.168.0.18 () {52 vars in 1125 bytes} [Sat Oct 15 19:13:26 2022] POST /admin/config/configtbl/add/ => generated 0 bytes in 312 msecs (HTTP/1.1 302) 11 headers in 664 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 14/14] 192.168.0.18 () {46 vars in 1215 bytes} [Sat Oct 15 19:13:26 2022] GET /admin/config/configtbl/ => generated 7360 bytes in 557 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 15/15] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 19:13:26 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 16/16] 192.168.0.18 () {44 vars in 993 bytes} [Sat Oct 15 21:04:17 2022] GET /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 6886 bytes in 524 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 17/17] 192.168.0.18 () {42 vars in 775 bytes} [Sat Oct 15 21:04:18 2022] GET /admin/jsi18n/ => generated 3343 bytes in 135 msecs (HTTP/1.1 200) 7 headers in 230 bytes (2 switches on core 0)
+[pid: 4846|app: 0|req: 18/18] 192.168.0.18 () {44 vars in 962 bytes} [Sat Oct 15 21:04:29 2022] GET /admin/config/configtbl/ => generated 7122 bytes in 472 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 19/19] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 21:04:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 20/20] 192.168.0.18 () {44 vars in 993 bytes} [Sat Oct 15 21:18:30 2022] GET /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 6886 bytes in 475 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 21/21] 192.168.0.18 () {42 vars in 775 bytes} [Sat Oct 15 21:18:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 22/22] 192.168.0.18 () {52 vars in 1206 bytes} [Sat Oct 15 21:18:34 2022] POST /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 0 bytes in 234 msecs (HTTP/1.1 302) 11 headers in 666 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 23/23] 192.168.0.18 () {46 vars in 1244 bytes} [Sat Oct 15 21:18:35 2022] GET /admin/config/configtbl/ => generated 7366 bytes in 455 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 24/24] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 21:18:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 25/25] 192.168.0.18 () {44 vars in 993 bytes} [Sat Oct 15 21:18:53 2022] GET /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 6886 bytes in 476 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 26/26] 192.168.0.18 () {42 vars in 775 bytes} [Sat Oct 15 21:18:53 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 27/27] 192.168.0.18 () {52 vars in 1206 bytes} [Sat Oct 15 21:18:56 2022] POST /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 0 bytes in 217 msecs (HTTP/1.1 302) 11 headers in 666 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 28/28] 192.168.0.18 () {46 vars in 1244 bytes} [Sat Oct 15 21:18:56 2022] GET /admin/config/configtbl/ => generated 7366 bytes in 451 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 29/29] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 21:18:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 30/30] 192.168.0.18 () {44 vars in 993 bytes} [Sat Oct 15 21:35:49 2022] GET /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 6886 bytes in 478 msecs (HTTP/1.1 200) 10 headers in 470 bytes (2 switches on core 0)
+[pid: 4846|app: 0|req: 31/31] 192.168.0.18 () {42 vars in 775 bytes} [Sat Oct 15 21:35:49 2022] GET /admin/jsi18n/ => generated 3343 bytes in 132 msecs (HTTP/1.1 200) 7 headers in 230 bytes (2 switches on core 0)
+[pid: 4846|app: 0|req: 32/32] 192.168.0.18 () {52 vars in 1206 bytes} [Sat Oct 15 21:35:52 2022] POST /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 0 bytes in 220 msecs (HTTP/1.1 302) 11 headers in 666 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 33/33] 192.168.0.18 () {46 vars in 1244 bytes} [Sat Oct 15 21:35:53 2022] GET /admin/config/configtbl/ => generated 7366 bytes in 452 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 34/34] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 21:35:53 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 35/35] 192.168.0.18 () {44 vars in 939 bytes} [Sat Oct 15 22:13:28 2022] GET /admin/config/configtbl/add/ => generated 6522 bytes in 436 msecs (HTTP/1.1 200) 10 headers in 470 bytes (2 switches on core 0)
+[pid: 4846|app: 0|req: 36/36] 192.168.0.18 () {42 vars in 748 bytes} [Sat Oct 15 22:13:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 230 bytes (2 switches on core 0)
+[pid: 4846|app: 0|req: 37/37] 192.168.0.18 () {52 vars in 1125 bytes} [Sat Oct 15 22:13:35 2022] POST /admin/config/configtbl/add/ => generated 0 bytes in 244 msecs (HTTP/1.1 302) 11 headers in 660 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 38/38] 192.168.0.18 () {46 vars in 1211 bytes} [Sat Oct 15 22:13:35 2022] GET /admin/config/configtbl/ => generated 7617 bytes in 464 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 39/39] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:13:36 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 40/40] 192.168.0.18 () {44 vars in 939 bytes} [Sat Oct 15 22:21:08 2022] GET /admin/config/configtbl/add/ => generated 6522 bytes in 443 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 41/41] 192.168.0.18 () {42 vars in 748 bytes} [Sat Oct 15 22:21:09 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 42/42] 192.168.0.18 () {52 vars in 1125 bytes} [Sat Oct 15 22:22:49 2022] POST /admin/config/configtbl/add/ => generated 0 bytes in 226 msecs (HTTP/1.1 302) 11 headers in 642 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 43/43] 192.168.0.18 () {46 vars in 1193 bytes} [Sat Oct 15 22:22:50 2022] GET /admin/config/configtbl/ => generated 7832 bytes in 492 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 44/44] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:22:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 45/45] 192.168.0.18 () {44 vars in 953 bytes} [Sat Oct 15 22:25:13 2022] GET /admin/config/configtbl/run/change/ => generated 6773 bytes in 474 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 46/46] 192.168.0.18 () {42 vars in 755 bytes} [Sat Oct 15 22:25:14 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 47/47] 192.168.0.18 () {52 vars in 1146 bytes} [Sat Oct 15 22:25:19 2022] POST /admin/config/configtbl/run/change/ => generated 0 bytes in 214 msecs (HTTP/1.1 302) 11 headers in 641 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 48/48] 192.168.0.18 () {46 vars in 1199 bytes} [Sat Oct 15 22:25:20 2022] GET /admin/config/configtbl/ => generated 7834 bytes in 487 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 49/49] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:25:20 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 50/50] 192.168.0.18 () {44 vars in 953 bytes} [Sat Oct 15 22:25:52 2022] GET /admin/config/configtbl/run/change/ => generated 6773 bytes in 477 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 51/51] 192.168.0.18 () {42 vars in 755 bytes} [Sat Oct 15 22:25:53 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 52/52] 192.168.0.18 () {52 vars in 1146 bytes} [Sat Oct 15 22:25:57 2022] POST /admin/config/configtbl/run/change/ => generated 0 bytes in 221 msecs (HTTP/1.1 302) 11 headers in 641 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 53/53] 192.168.0.18 () {46 vars in 1199 bytes} [Sat Oct 15 22:25:57 2022] GET /admin/config/configtbl/ => generated 7834 bytes in 494 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 54/54] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:25:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 55/55] 192.168.0.18 () {44 vars in 931 bytes} [Sat Oct 15 22:26:26 2022] GET /admin/config/configtbl/ => generated 7628 bytes in 497 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 56/56] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:26:27 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 57/57] 192.168.0.18 () {44 vars in 953 bytes} [Sat Oct 15 22:27:00 2022] GET /admin/config/configtbl/run/change/ => generated 6773 bytes in 471 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 58/58] 192.168.0.18 () {42 vars in 755 bytes} [Sat Oct 15 22:27:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 59/59] 192.168.0.18 () {52 vars in 1146 bytes} [Sat Oct 15 22:27:07 2022] POST /admin/config/configtbl/run/change/ => generated 0 bytes in 224 msecs (HTTP/1.1 302) 11 headers in 641 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 60/60] 192.168.0.18 () {46 vars in 1199 bytes} [Sat Oct 15 22:27:07 2022] GET /admin/config/configtbl/ => generated 7834 bytes in 496 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 61/61] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:27:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 62/62] 192.168.0.18 () {44 vars in 953 bytes} [Sat Oct 15 22:27:24 2022] GET /admin/config/configtbl/run/change/ => generated 6773 bytes in 472 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 63/63] 192.168.0.18 () {42 vars in 755 bytes} [Sat Oct 15 22:27:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 64/64] 192.168.0.18 () {52 vars in 1146 bytes} [Sat Oct 15 22:27:28 2022] POST /admin/config/configtbl/run/change/ => generated 0 bytes in 222 msecs (HTTP/1.1 302) 11 headers in 641 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 65/65] 192.168.0.18 () {46 vars in 1199 bytes} [Sat Oct 15 22:27:28 2022] GET /admin/config/configtbl/ => generated 7834 bytes in 499 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 66/66] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:27:29 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 67/67] 192.168.0.18 () {44 vars in 993 bytes} [Sat Oct 15 22:28:38 2022] GET /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 6886 bytes in 477 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 68/68] 192.168.0.18 () {42 vars in 775 bytes} [Sat Oct 15 22:28:39 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 69/69] 192.168.0.18 () {52 vars in 1206 bytes} [Sat Oct 15 22:28:44 2022] POST /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 0 bytes in 223 msecs (HTTP/1.1 302) 11 headers in 666 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 70/70] 192.168.0.18 () {46 vars in 1244 bytes} [Sat Oct 15 22:28:44 2022] GET /admin/config/configtbl/ => generated 7872 bytes in 491 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 71/71] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:28:45 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 72/72] 192.168.0.18 () {44 vars in 989 bytes} [Sat Oct 15 22:28:56 2022] GET /admin/config/configtbl/hummidity_5Fthreshold/change/ => generated 6874 bytes in 465 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 73/73] 192.168.0.18 () {42 vars in 773 bytes} [Sat Oct 15 22:28:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 74/74] 192.168.0.18 () {52 vars in 1200 bytes} [Sat Oct 15 22:29:02 2022] POST /admin/config/configtbl/hummidity_5Fthreshold/change/ => generated 0 bytes in 211 msecs (HTTP/1.1 302) 11 headers in 662 bytes (2 switches on core 0)
+[pid: 4846|app: 0|req: 75/75] 192.168.0.18 () {46 vars in 1238 bytes} [Sat Oct 15 22:29:02 2022] GET /admin/config/configtbl/ => generated 7868 bytes in 489 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 76/76] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:29:03 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 77/77] 192.168.0.18 () {44 vars in 993 bytes} [Sat Oct 15 22:29:11 2022] GET /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 6886 bytes in 493 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 78/78] 192.168.0.18 () {42 vars in 775 bytes} [Sat Oct 15 22:29:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 79/79] 192.168.0.18 () {52 vars in 1206 bytes} [Sat Oct 15 22:29:15 2022] POST /admin/config/configtbl/temperature_5Fthreshold/change/ => generated 0 bytes in 222 msecs (HTTP/1.1 302) 11 headers in 666 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 80/80] 192.168.0.18 () {46 vars in 1244 bytes} [Sat Oct 15 22:29:16 2022] GET /admin/config/configtbl/ => generated 7872 bytes in 491 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 81/81] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:29:16 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 82/82] 192.168.0.18 () {44 vars in 989 bytes} [Sat Oct 15 22:29:17 2022] GET /admin/config/configtbl/hummidity_5Fthreshold/change/ => generated 6874 bytes in 464 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 83/83] 192.168.0.18 () {42 vars in 773 bytes} [Sat Oct 15 22:29:18 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 84/84] 192.168.0.18 () {52 vars in 1200 bytes} [Sat Oct 15 22:29:21 2022] POST /admin/config/configtbl/hummidity_5Fthreshold/change/ => generated 0 bytes in 219 msecs (HTTP/1.1 302) 11 headers in 662 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 85/85] 192.168.0.18 () {46 vars in 1238 bytes} [Sat Oct 15 22:29:21 2022] GET /admin/config/configtbl/ => generated 7868 bytes in 485 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 4846|app: 0|req: 86/86] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:29:22 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 22:42:13 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x15c8890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x15c8890 pid: 7227 (default app)
+spawned uWSGI master process (pid: 7227)
+spawned uWSGI worker 1 (pid: 7230, cores: 1)
+subprocess 7228 exited with code 0
+[pid: 7230|app: 0|req: 1/1] 192.168.0.18 () {44 vars in 897 bytes} [Sat Oct 15 22:42:24 2022] GET /admin/ => generated 8031 bytes in 2204 msecs (HTTP/1.1 200) 10 headers in 470 bytes (2 switches on core 0)
+[pid: 7230|app: 0|req: 2/2] 192.168.0.18 () {44 vars in 914 bytes} [Sat Oct 15 22:44:09 2022] GET /admin/config/configtbl/ => generated 8156 bytes in 1096 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 3/3] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:44:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 144 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 4/4] 192.168.0.18 () {44 vars in 939 bytes} [Sat Oct 15 22:44:14 2022] GET /admin/config/configtbl/add/ => generated 7050 bytes in 839 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 5/5] 192.168.0.18 () {42 vars in 748 bytes} [Sat Oct 15 22:44:15 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 6/6] 192.168.0.18 () {52 vars in 1125 bytes} [Sat Oct 15 22:44:54 2022] POST /admin/config/configtbl/add/ => generated 0 bytes in 220 msecs (HTTP/1.1 302) 11 headers in 660 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 7/7] 192.168.0.18 () {46 vars in 1211 bytes} [Sat Oct 15 22:44:55 2022] GET /admin/config/configtbl/ => generated 8661 bytes in 541 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 8/8] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:44:55 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 9/9] 192.168.0.18 () {44 vars in 939 bytes} [Sat Oct 15 22:44:59 2022] GET /admin/config/configtbl/add/ => generated 7050 bytes in 457 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 10/10] 192.168.0.18 () {42 vars in 748 bytes} [Sat Oct 15 22:45:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 11/11] 192.168.0.18 () {52 vars in 1125 bytes} [Sat Oct 15 22:45:23 2022] POST /admin/config/configtbl/add/ => generated 0 bytes in 227 msecs (HTTP/1.1 302) 11 headers in 660 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 12/12] 192.168.0.18 () {46 vars in 1211 bytes} [Sat Oct 15 22:45:23 2022] GET /admin/config/configtbl/ => generated 8931 bytes in 557 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 13/13] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:45:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 14/14] 192.168.0.18 () {44 vars in 981 bytes} [Sat Oct 15 22:45:27 2022] GET /admin/config/configtbl/record_5Fduration/change/ => generated 7377 bytes in 549 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 15/15] 192.168.0.18 () {42 vars in 769 bytes} [Sat Oct 15 22:45:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 16/16] 192.168.0.18 () {52 vars in 1188 bytes} [Sat Oct 15 22:45:34 2022] POST /admin/config/configtbl/record_5Fduration/change/ => generated 0 bytes in 224 msecs (HTTP/1.1 302) 11 headers in 662 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 17/17] 192.168.0.18 () {46 vars in 1234 bytes} [Sat Oct 15 22:45:35 2022] GET /admin/config/configtbl/ => generated 9202 bytes in 576 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 18/18] 192.168.0.18 () {42 vars in 744 bytes} [Sat Oct 15 22:45:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 19/19] 192.168.0.18 () {44 vars in 929 bytes} [Sat Oct 15 22:56:57 2022] GET /admin/monitor/monitor/ => generated 5940 bytes in 439 msecs (HTTP/1.1 200) 10 headers in 470 bytes (2 switches on core 0)
+[pid: 7230|app: 0|req: 20/20] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 22:56:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 21/21] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 22:57:00 2022] GET /admin/monitor/monitor/ => generated 5940 bytes in 411 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 22/22] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 22:57:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 23/23] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 22:57:49 2022] GET /admin/monitor/monitor/ => generated 5940 bytes in 401 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 24/24] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 22:57:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 25/25] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 22:57:50 2022] GET /admin/monitor/monitor/ => generated 5940 bytes in 395 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7230|app: 0|req: 26/26] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 22:57:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+Internal Server Error: /admin/monitor/monitor/
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2068, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/models/query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+  File "/usr/lib/python3.9/sqlite3/dbapi2.py", line 64, in convert_date
+    return datetime.date(*map(int, val.split(b"-")))
+ValueError: invalid literal for int() with base 10: b'15 22:58:37.157415'
+[pid: 7230|app: 0|req: 27/27] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 22:58:39 2022] GET /admin/monitor/monitor/ => generated 125947 bytes in 2332 msecs (HTTP/1.1 500) 7 headers in 243 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 23:05:33 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xdf9890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xdf9890 pid: 7289 (default app)
+spawned uWSGI master process (pid: 7289)
+spawned uWSGI worker 1 (pid: 7292, cores: 1)
+subprocess 7290 exited with code 0
+[pid: 7292|app: 0|req: 1/1] 192.168.0.18 () {44 vars in 956 bytes} [Sat Oct 15 23:06:20 2022] GET /admin/config/configtbl/ => generated 8972 bytes in 2698 msecs (HTTP/1.1 200) 10 headers in 470 bytes (2 switches on core 0)
+[pid: 7292|app: 0|req: 2/2] 192.168.0.18 () {44 vars in 929 bytes} [Sat Oct 15 23:06:25 2022] GET /admin/monitor/monitor/ => generated 9054 bytes in 684 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 3/3] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:06:26 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 4/4] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:15:28 2022] GET /admin/monitor/monitor/ => generated 10283 bytes in 756 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 5/5] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:15:29 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (2 switches on core 0)
+[pid: 7292|app: 0|req: 6/6] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:23:45 2022] GET /admin/monitor/monitor/ => generated 12747 bytes in 987 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 7/7] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:23:47 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 8/8] 192.168.0.18 () {52 vars in 1110 bytes} [Sat Oct 15 23:24:04 2022] POST /admin/monitor/monitor/ => generated 9012 bytes in 690 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 9/9] 192.168.0.18 () {52 vars in 1110 bytes} [Sat Oct 15 23:24:06 2022] POST /admin/monitor/monitor/ => generated 0 bytes in 920 msecs (HTTP/1.1 302) 11 headers in 562 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 10/10] 192.168.0.18 () {46 vars in 1107 bytes} [Sat Oct 15 23:24:07 2022] GET /admin/monitor/monitor/ => generated 7664 bytes in 471 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 11/11] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:24:07 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 12/12] 192.168.0.18 () {52 vars in 1110 bytes} [Sat Oct 15 23:24:13 2022] POST /admin/monitor/monitor/ => generated 6036 bytes in 431 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 13/13] 192.168.0.18 () {52 vars in 1110 bytes} [Sat Oct 15 23:24:15 2022] POST /admin/monitor/monitor/ => generated 0 bytes in 263 msecs (HTTP/1.1 302) 11 headers in 559 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 14/14] 192.168.0.18 () {46 vars in 1104 bytes} [Sat Oct 15 23:24:15 2022] GET /admin/monitor/monitor/ => generated 6077 bytes in 387 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 15/15] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:24:16 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 16/16] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:24:21 2022] GET /admin/monitor/monitor/ => generated 5940 bytes in 412 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 17/17] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:24:22 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 18/18] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:24:29 2022] GET /admin/monitor/monitor/ => generated 7525 bytes in 504 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7292|app: 0|req: 19/19] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:24:29 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 23:26:28 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x305890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x305890 pid: 7386 (default app)
+spawned uWSGI master process (pid: 7386)
+spawned uWSGI worker 1 (pid: 7389, cores: 1)
+subprocess 7387 exited with code 0
+[pid: 7389|app: 0|req: 1/1] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:26:39 2022] GET /admin/monitor/monitor/ => generated 7832 bytes in 2654 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7389|app: 0|req: 2/2] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:26:41 2022] GET /admin/jsi18n/ => generated 3343 bytes in 122 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7389|app: 0|req: 3/3] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:26:44 2022] GET /admin/monitor/monitor/ => generated 7832 bytes in 541 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7389|app: 0|req: 4/4] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:26:44 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7389|app: 0|req: 5/5] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:26:45 2022] GET /admin/monitor/monitor/ => generated 7832 bytes in 537 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7389|app: 0|req: 6/6] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:26:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7389|app: 0|req: 7/7] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:26:49 2022] GET /admin/monitor/monitor/ => generated 7832 bytes in 523 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7389|app: 0|req: 8/8] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:26:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 23:28:09 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x738890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x738890 pid: 7395 (default app)
+spawned uWSGI master process (pid: 7395)
+spawned uWSGI worker 1 (pid: 7398, cores: 1)
+subprocess 7396 exited with code 0
+[pid: 7398|app: 0|req: 1/1] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:28:21 2022] GET /admin/monitor/monitor/ => generated 7939 bytes in 2652 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7398|app: 0|req: 2/2] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:28:23 2022] GET /admin/jsi18n/ => generated 8911 bytes in 141 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7398|app: 0|req: 3/3] 192.168.0.18 () {44 vars in 916 bytes} [Sat Oct 15 23:28:31 2022] GET /admin/auth/user/ => generated 9700 bytes in 670 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7398|app: 0|req: 4/4] 192.168.0.18 () {42 vars in 737 bytes} [Sat Oct 15 23:28:32 2022] GET /admin/jsi18n/ => generated 8911 bytes in 123 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7398|app: 0|req: 5/5] 192.168.0.18 () {44 vars in 890 bytes} [Sat Oct 15 23:28:39 2022] GET /admin/ => generated 7749 bytes in 512 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7398|app: 0|req: 6/6] 192.168.0.18 () {44 vars in 912 bytes} [Sat Oct 15 23:28:42 2022] GET /admin/monitor/monitor/ => generated 7939 bytes in 533 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7398|app: 0|req: 7/7] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:28:42 2022] GET /admin/jsi18n/ => generated 8911 bytes in 117 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 23:28:52 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1a05890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1a05890 pid: 7404 (default app)
+spawned uWSGI master process (pid: 7404)
+spawned uWSGI worker 1 (pid: 7407, cores: 1)
+subprocess 7405 exited with code 0
+[pid: 7407|app: 0|req: 1/1] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:29:23 2022] GET /admin/monitor/monitor/ => generated 7832 bytes in 2684 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7407|app: 0|req: 2/2] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:29:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 7407|app: 0|req: 3/3] 192.168.0.18 () {44 vars in 948 bytes} [Sat Oct 15 23:30:22 2022] GET /admin/monitor/monitor/20/change/ => generated 8192 bytes in 1057 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7407|app: 0|req: 4/4] 192.168.0.18 () {42 vars in 753 bytes} [Sat Oct 15 23:30:23 2022] GET /admin/jsi18n/ => generated 3343 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 230 bytes (2 switches on core 0)
+[pid: 7407|app: 0|req: 5/5] 192.168.0.18 () {44 vars in 938 bytes} [Sat Oct 15 23:30:38 2022] GET /admin/monitor/monitor/ => generated 7832 bytes in 544 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 7407|app: 0|req: 6/6] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:30:39 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 23:32:00 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xfa2890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xfa2890 pid: 7418 (default app)
+spawned uWSGI master process (pid: 7418)
+spawned uWSGI worker 1 (pid: 7421, cores: 1)
+subprocess 7419 exited with code 0
+[pid: 7421|app: 0|req: 1/1] 192.168.0.18 () {44 vars in 928 bytes} [Sat Oct 15 23:32:09 2022] GET /admin/monitor/monitor/ => generated 7832 bytes in 2785 msecs (HTTP/1.1 200) 10 headers in 470 bytes (2 switches on core 0)
+[pid: 7421|app: 0|req: 2/2] 192.168.0.18 () {42 vars in 743 bytes} [Sat Oct 15 23:32:12 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Sat Oct 15 23:57:04 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1b59890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1b59890 pid: 7471 (default app)
+spawned uWSGI master process (pid: 7471)
+spawned uWSGI worker 1 (pid: 7474, cores: 1)
+subprocess 7472 exited with code 0
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "./achamber_web/urls.py", line 27, in <module>
+    path('', include('config.urls')),
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'config.urls'
+[pid: 7474|app: 0|req: 1/1] 192.168.0.18 () {42 vars in 826 bytes} [Sat Oct 15 23:57:15 2022] GET / => generated 0 bytes in 103269 msecs (HTTP/1.1 500) 0 headers in 0 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.

@@ -1,0 +1,634 @@
+*** Starting uWSGI 2.0.20 (32bit) on [Mon Oct 17 11:17:39 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1705890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 16 seconds on interpreter 0x1705890 pid: 308 (default app)
+spawned uWSGI master process (pid: 308)
+spawned uWSGI worker 1 (pid: 437, cores: 1)
+subprocess 326 exited with code 0
+[pid: 437|app: 0|req: 1/1] 192.168.1.59 () {40 vars in 725 bytes} [Mon Oct 17 11:19:16 2022] GET / => generated 0 bytes in 744 msecs (HTTP/1.1 302) 8 headers in 257 bytes (2 switches on core 0)
+[pid: 437|app: 0|req: 2/2] 192.168.1.59 () {40 vars in 768 bytes} [Mon Oct 17 11:19:17 2022] GET /accounts/login/?next=/ => generated 3874 bytes in 843 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 3/3] 192.168.1.59 () {42 vars in 699 bytes} [Mon Oct 17 11:19:17 2022] GET /admin/jsi18n/ => generated 0 bytes in 577 msecs (HTTP/1.1 302) 8 headers in 267 bytes (2 switches on core 0)
+[pid: 437|app: 0|req: 4/4] 192.168.1.59 () {42 vars in 736 bytes} [Mon Oct 17 11:19:18 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2236 bytes in 731 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 437|app: 0|req: 5/5] 192.168.1.59 () {42 vars in 756 bytes} [Mon Oct 17 11:19:19 2022] GET /favicon.ico => generated 3046 bytes in 286 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 6/6] 192.168.1.59 () {52 vars in 1052 bytes} [Mon Oct 17 11:19:25 2022] POST /accounts/login/ => generated 0 bytes in 5280 msecs (HTTP/1.1 302) 12 headers in 628 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 7/7] 192.168.1.59 () {46 vars in 915 bytes} [Mon Oct 17 11:19:30 2022] GET / => generated 4147 bytes in 228 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 8/8] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 11:19:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 9/9] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 11:19:32 2022] GET / => generated 4147 bytes in 207 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 10/10] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 11:19:32 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 11/11] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 11:19:34 2022] GET / => generated 4147 bytes in 210 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 12/12] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 11:19:34 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+Mon Oct 17 11:19:36 2022 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.1.59) !!!
+Mon Oct 17 11:19:36 2022 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (192.168.1.59)
+OSError: write error
+[pid: 437|app: 0|req: 13/13] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 11:19:35 2022] GET / => generated 0 bytes in 207 msecs (HTTP/1.1 200) 8 headers in 0 bytes (0 switches on core 0)
+[pid: 437|app: 0|req: 14/14] 192.168.1.59 () {44 vars in 878 bytes} [Mon Oct 17 11:19:36 2022] GET /monitor/ => generated 14031 bytes in 1461 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 15/15] 192.168.1.59 () {42 vars in 729 bytes} [Mon Oct 17 11:19:37 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 16/16] 192.168.1.174 () {40 vars in 733 bytes} [Mon Oct 17 11:20:23 2022] GET / => generated 0 bytes in 37 msecs (HTTP/1.1 302) 8 headers in 257 bytes (2 switches on core 0)
+[pid: 437|app: 0|req: 17/17] 192.168.1.174 () {40 vars in 776 bytes} [Mon Oct 17 11:20:23 2022] GET /accounts/login/?next=/ => generated 3874 bytes in 97 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 18/18] 192.168.1.174 () {42 vars in 707 bytes} [Mon Oct 17 11:20:24 2022] GET /admin/jsi18n/ => generated 0 bytes in 31 msecs (HTTP/1.1 302) 8 headers in 267 bytes (2 switches on core 0)
+[pid: 437|app: 0|req: 19/19] 192.168.1.174 () {42 vars in 744 bytes} [Mon Oct 17 11:20:25 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2236 bytes in 225 msecs (HTTP/1.1 200) 10 headers in 470 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 437|app: 0|req: 20/20] 192.168.1.174 () {42 vars in 764 bytes} [Mon Oct 17 11:20:27 2022] GET /favicon.ico => generated 3046 bytes in 243 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 21/21] 192.168.1.174 () {52 vars in 1060 bytes} [Mon Oct 17 11:20:49 2022] POST /accounts/login/ => generated 0 bytes in 5010 msecs (HTTP/1.1 302) 12 headers in 628 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 22/22] 192.168.1.174 () {46 vars in 923 bytes} [Mon Oct 17 11:20:54 2022] GET / => generated 4147 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 23/23] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 11:20:55 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 24/24] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 11:20:56 2022] GET / => generated 4147 bytes in 201 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 25/25] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 11:20:56 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 26/26] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 11:20:58 2022] GET / => generated 4147 bytes in 195 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 27/27] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 11:20:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 28/28] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 11:21:00 2022] GET / => generated 4147 bytes in 205 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 29/29] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 11:21:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 30/30] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 11:21:01 2022] GET / => generated 4147 bytes in 206 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 31/31] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 11:21:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 32/32] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 11:21:03 2022] GET / => generated 4147 bytes in 191 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 33/33] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 11:21:03 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 34/34] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 11:21:05 2022] GET / => generated 4147 bytes in 200 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 35/35] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 11:21:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 36/36] 192.168.1.174 () {44 vars in 886 bytes} [Mon Oct 17 11:21:06 2022] GET /monitor/ => generated 14031 bytes in 1454 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 37/37] 192.168.1.174 () {42 vars in 737 bytes} [Mon Oct 17 11:21:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 38/38] 192.168.1.174 () {46 vars in 917 bytes} [Mon Oct 17 11:21:12 2022] GET /monitor/ => generated 14031 bytes in 1422 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 437|app: 0|req: 39/39] 192.168.1.174 () {42 vars in 737 bytes} [Mon Oct 17 11:21:14 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                  *** Starting uWSGI 2.0.20 (32bit) on [Mon Oct 17 12:17:52 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1009890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 16 seconds on interpreter 0x1009890 pid: 309 (default app)
+spawned uWSGI master process (pid: 309)
+spawned uWSGI worker 1 (pid: 492, cores: 1)
+subprocess 327 exited with code 0
+[pid: 492|app: 0|req: 1/1] 192.168.1.59 () {44 vars in 869 bytes} [Mon Oct 17 13:10:13 2022] GET / => generated 4101 bytes in 1714 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 2/2] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:15 2022] GET /admin/jsi18n/ => generated 3343 bytes in 187 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 3/3] 192.168.1.59 () {44 vars in 878 bytes} [Mon Oct 17 13:10:18 2022] GET /monitor/ => generated 3967 bytes in 152 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 4/4] 192.168.1.59 () {42 vars in 729 bytes} [Mon Oct 17 13:10:19 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 5/5] 192.168.1.59 () {44 vars in 870 bytes} [Mon Oct 17 13:10:28 2022] GET / => generated 4101 bytes in 180 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 6/6] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 7/7] 192.168.1.59 () {52 vars in 1042 bytes} [Mon Oct 17 13:10:30 2022] POST / => generated 4362 bytes in 241 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 8/8] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 147 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 9/9] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:32 2022] GET / => generated 4362 bytes in 221 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 10/10] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:32 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 11/11] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:33 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 12/12] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:33 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 13/13] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:34 2022] GET / => generated 4362 bytes in 184 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 14/14] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 15/15] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:36 2022] GET / => generated 4362 bytes in 284 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 16/16] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:36 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 17/17] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:37 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 18/18] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 19/19] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:39 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 20/20] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:39 2022] GET /admin/jsi18n/ => generated 3343 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 21/21] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:40 2022] GET / => generated 4362 bytes in 253 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 22/22] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:41 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 23/23] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:42 2022] GET / => generated 4362 bytes in 173 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 24/24] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:42 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 25/25] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:43 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 26/26] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:43 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 27/27] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:45 2022] GET / => generated 4362 bytes in 203 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 28/28] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:45 2022] GET /admin/jsi18n/ => generated 3343 bytes in 195 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 29/29] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:46 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 30/30] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 31/31] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:48 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 32/32] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:48 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 33/33] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:49 2022] GET / => generated 4362 bytes in 204 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 34/34] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:49 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 35/35] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:50 2022] GET / => generated 4362 bytes in 288 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 36/36] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 37/37] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:52 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 38/38] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:52 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 39/39] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:53 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 40/40] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:54 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 41/41] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:55 2022] GET / => generated 4362 bytes in 280 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 42/42] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:55 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 43/43] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:56 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 44/44] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 45/45] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:58 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 46/46] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 135 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 47/47] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:10:59 2022] GET / => generated 4362 bytes in 207 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 48/48] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:10:59 2022] GET /admin/jsi18n/ => generated 3343 bytes in 150 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 49/49] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:01 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 50/50] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 51/51] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:02 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 52/52] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 53/53] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:03 2022] GET / => generated 4362 bytes in 197 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 54/54] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:04 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 55/55] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:05 2022] GET / => generated 4362 bytes in 435 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 56/56] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 222 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 57/57] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:07 2022] GET / => generated 4362 bytes in 192 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 58/58] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:07 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 59/59] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:08 2022] GET / => generated 4362 bytes in 261 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 60/60] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 61/61] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:10 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 62/62] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:10 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 63/63] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:11 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 64/64] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 132 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 65/65] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:12 2022] GET / => generated 4362 bytes in 243 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 66/66] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:13 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 67/67] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:14 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 68/68] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:14 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 69/69] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:15 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 70/70] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:16 2022] GET /admin/jsi18n/ => generated 3343 bytes in 134 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 71/71] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:17 2022] GET / => generated 4362 bytes in 268 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 72/72] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:17 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 73/73] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:18 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 74/74] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:19 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 75/75] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:20 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 76/76] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:20 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 77/77] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:21 2022] GET / => generated 4362 bytes in 205 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 78/78] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:22 2022] GET /admin/jsi18n/ => generated 3343 bytes in 196 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 79/79] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:23 2022] GET / => generated 4362 bytes in 183 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 80/80] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:23 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 81/81] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:24 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 82/82] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 83/83] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:26 2022] GET / => generated 4362 bytes in 203 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 84/84] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:26 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 85/85] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:27 2022] GET / => generated 4362 bytes in 283 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 86/86] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:27 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 87/87] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:29 2022] GET / => generated 4362 bytes in 174 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 88/88] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:29 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 89/89] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:30 2022] GET / => generated 4362 bytes in 175 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 90/90] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 122 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 91/91] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:31 2022] GET / => generated 4362 bytes in 290 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 92/92] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:32 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 93/93] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:33 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 94/94] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:33 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 95/95] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:34 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 96/96] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 97/97] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:36 2022] GET / => generated 4362 bytes in 206 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 98/98] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:36 2022] GET /admin/jsi18n/ => generated 3343 bytes in 191 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 99/99] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:37 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 100/100] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 101/101] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:39 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 102/102] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:39 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 103/103] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:40 2022] GET / => generated 4362 bytes in 208 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 104/104] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:40 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 105/105] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:42 2022] GET / => generated 4362 bytes in 257 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 106/106] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:42 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 107/107] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:43 2022] GET / => generated 4362 bytes in 178 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 108/108] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:43 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 109/109] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:44 2022] GET / => generated 4362 bytes in 173 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 110/110] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:45 2022] GET /admin/jsi18n/ => generated 3343 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 111/111] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:46 2022] GET / => generated 4362 bytes in 272 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 112/112] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 113/113] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:47 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 114/114] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:48 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 115/115] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:49 2022] GET / => generated 4362 bytes in 176 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 116/116] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:49 2022] GET /admin/jsi18n/ => generated 3343 bytes in 128 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 117/117] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:50 2022] GET / => generated 4362 bytes in 371 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 118/118] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 271 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 119/119] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:52 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 120/120] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:52 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 121/121] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:53 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 122/122] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:54 2022] GET /admin/jsi18n/ => generated 3343 bytes in 122 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 123/123] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:55 2022] GET / => generated 4362 bytes in 187 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 124/124] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:55 2022] GET /admin/jsi18n/ => generated 3343 bytes in 194 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 125/125] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:56 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 126/126] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 127/127] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:58 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 128/128] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 129/129] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:11:59 2022] GET / => generated 4362 bytes in 176 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 130/130] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:11:59 2022] GET /admin/jsi18n/ => generated 3343 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 131/131] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:01 2022] GET / => generated 4362 bytes in 288 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 132/132] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 133/133] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:02 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 134/134] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 135/135] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:03 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 136/136] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:04 2022] GET /admin/jsi18n/ => generated 3343 bytes in 132 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 137/137] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:05 2022] GET / => generated 4362 bytes in 282 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 138/138] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 139/139] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:06 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 140/140] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:07 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 141/141] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:08 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 142/142] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 143/143] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:09 2022] GET / => generated 4362 bytes in 201 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 144/144] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:09 2022] GET /admin/jsi18n/ => generated 3343 bytes in 163 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 145/145] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:11 2022] GET / => generated 4362 bytes in 227 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 146/146] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 147/147] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:12 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 148/148] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:12 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 149/149] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:14 2022] GET / => generated 4362 bytes in 173 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 150/150] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:14 2022] GET /admin/jsi18n/ => generated 3343 bytes in 125 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 151/151] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:15 2022] GET / => generated 4362 bytes in 286 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 152/152] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:15 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 153/153] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:17 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 154/154] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:17 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 155/155] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:18 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 156/156] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:18 2022] GET /admin/jsi18n/ => generated 3343 bytes in 134 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 157/157] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:19 2022] GET / => generated 4362 bytes in 213 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 158/158] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:20 2022] GET /admin/jsi18n/ => generated 3343 bytes in 150 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 159/159] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:21 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 160/160] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:21 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 161/161] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:22 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 162/162] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:22 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 163/163] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:24 2022] GET / => generated 4362 bytes in 202 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 164/164] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 165/165] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:25 2022] GET / => generated 4362 bytes in 259 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 166/166] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 167/167] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:27 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 168/168] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:27 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 169/169] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:28 2022] GET / => generated 4362 bytes in 183 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 170/170] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 171/171] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:29 2022] GET / => generated 4362 bytes in 285 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 172/172] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 173/173] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:31 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 174/174] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 175/175] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:32 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 176/176] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:33 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 177/177] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:34 2022] GET / => generated 4362 bytes in 207 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 178/178] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:34 2022] GET /admin/jsi18n/ => generated 3343 bytes in 195 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 179/179] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:35 2022] GET / => generated 4362 bytes in 192 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 180/180] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 181/181] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:37 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 182/182] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:37 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 183/183] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:38 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 184/184] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 126 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 185/185] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:39 2022] GET / => generated 4362 bytes in 284 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 186/186] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:40 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 187/187] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:41 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 188/188] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:41 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 189/189] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:42 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 190/190] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:43 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 191/191] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:44 2022] GET / => generated 4362 bytes in 214 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 192/192] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:44 2022] GET /admin/jsi18n/ => generated 3343 bytes in 157 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 193/193] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:45 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 194/194] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:45 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 195/195] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:47 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 196/196] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:47 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 197/197] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:48 2022] GET / => generated 4362 bytes in 202 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 198/198] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:48 2022] GET /admin/jsi18n/ => generated 3343 bytes in 177 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 199/199] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:50 2022] GET / => generated 4362 bytes in 225 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 200/200] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 201/201] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:51 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 202/202] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 203/203] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:52 2022] GET / => generated 4362 bytes in 177 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 204/204] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:53 2022] GET /admin/jsi18n/ => generated 3343 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 205/205] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:54 2022] GET / => generated 4362 bytes in 273 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 206/206] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:54 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 207/207] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:56 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 208/208] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:56 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 209/209] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:57 2022] GET / => generated 4362 bytes in 187 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 210/210] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 193 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 211/211] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:12:59 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 212/212] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:12:59 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 213/213] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:00 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 214/214] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 215/215] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:02 2022] GET / => generated 4362 bytes in 202 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 216/216] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 217/217] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:03 2022] GET / => generated 4362 bytes in 246 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 218/218] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:03 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 219/219] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:04 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 220/220] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 221/221] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:06 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 222/222] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:06 2022] GET /admin/jsi18n/ => generated 3343 bytes in 128 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 223/223] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:07 2022] GET / => generated 4362 bytes in 280 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 224/224] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 225/225] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:09 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 226/226] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:09 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 227/227] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:10 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 228/228] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 129 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 229/229] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:12 2022] GET / => generated 4362 bytes in 284 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 230/230] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:12 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 231/231] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:13 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 232/232] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:14 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 233/233] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:15 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 234/234] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:15 2022] GET /admin/jsi18n/ => generated 3343 bytes in 137 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 235/235] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:16 2022] GET / => generated 4362 bytes in 277 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 236/236] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:17 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 237/237] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:18 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 238/238] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:18 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 239/239] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:19 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 240/240] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:19 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 241/241] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:21 2022] GET / => generated 4362 bytes in 203 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 242/242] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:21 2022] GET /admin/jsi18n/ => generated 3343 bytes in 179 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 243/243] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:22 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 244/244] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:22 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 245/245] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:23 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 246/246] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 247/247] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:25 2022] GET / => generated 4362 bytes in 198 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 248/248] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 249/249] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:26 2022] GET / => generated 4362 bytes in 228 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 250/250] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:27 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 251/251] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:28 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 252/252] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 253/253] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:29 2022] GET / => generated 4362 bytes in 180 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 254/254] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:29 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 255/255] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:31 2022] GET / => generated 4362 bytes in 284 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 256/256] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 257/257] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:32 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 258/258] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:32 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 259/259] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:34 2022] GET / => generated 4362 bytes in 179 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 260/260] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:34 2022] GET /admin/jsi18n/ => generated 3343 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 261/261] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:35 2022] GET / => generated 4362 bytes in 241 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 262/262] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 263/263] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:37 2022] GET / => generated 4362 bytes in 175 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 264/264] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:37 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 265/265] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:38 2022] GET / => generated 4362 bytes in 361 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 266/266] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 267/267] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:40 2022] GET / => generated 4362 bytes in 268 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 268/268] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:40 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 269/269] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:41 2022] GET / => generated 4362 bytes in 215 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 270/270] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:41 2022] GET /admin/jsi18n/ => generated 3343 bytes in 135 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 271/271] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:42 2022] GET / => generated 4362 bytes in 203 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 272/272] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:43 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 273/273] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:44 2022] GET / => generated 4362 bytes in 230 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 274/274] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:44 2022] GET /admin/jsi18n/ => generated 3343 bytes in 138 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 275/275] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:45 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 276/276] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 277/277] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:47 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 278/278] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:47 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 279/279] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:48 2022] GET / => generated 4362 bytes in 176 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 280/280] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:48 2022] GET /admin/jsi18n/ => generated 3343 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 281/281] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:50 2022] GET / => generated 4362 bytes in 286 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 282/282] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 283/283] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:51 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 284/284] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 285/285] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:53 2022] GET / => generated 4362 bytes in 168 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 286/286] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:53 2022] GET /admin/jsi18n/ => generated 3343 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 287/287] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:54 2022] GET / => generated 4362 bytes in 241 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 288/288] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:54 2022] GET /admin/jsi18n/ => generated 3343 bytes in 122 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 289/289] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:55 2022] GET / => generated 4362 bytes in 168 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 290/290] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:56 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 291/291] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:57 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 292/292] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 293/293] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:13:58 2022] GET / => generated 4362 bytes in 205 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 294/294] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:13:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 177 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 295/295] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:00 2022] GET / => generated 4362 bytes in 221 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 296/296] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 297/297] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:01 2022] GET / => generated 4362 bytes in 189 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 298/298] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 299/299] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:03 2022] GET / => generated 4362 bytes in 203 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 300/300] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:03 2022] GET /admin/jsi18n/ => generated 3343 bytes in 256 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 301/301] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:04 2022] GET / => generated 4362 bytes in 265 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 302/302] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 303/303] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:06 2022] GET / => generated 4362 bytes in 168 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 304/304] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:06 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 305/305] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:07 2022] GET / => generated 4362 bytes in 169 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 306/306] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:07 2022] GET /admin/jsi18n/ => generated 3343 bytes in 128 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 307/307] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:09 2022] GET / => generated 4362 bytes in 288 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 308/308] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:09 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 309/309] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:10 2022] GET / => generated 4362 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 310/310] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:10 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 311/311] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:11 2022] GET / => generated 4362 bytes in 167 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 312/312] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:14:12 2022] GET /admin/jsi18n/ => generated 3343 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+Mon Oct 17 13:14:13 2022 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.1.59) !!!
+Mon Oct 17 13:14:13 2022 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (192.168.1.59)
+OSError: write error
+[pid: 492|app: 0|req: 313/313] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:14:13 2022] GET / => generated 0 bytes in 206 msecs (HTTP/1.1 200) 8 headers in 0 bytes (0 switches on core 0)
+[pid: 492|app: 0|req: 314/314] 192.168.1.59 () {44 vars in 876 bytes} [Mon Oct 17 13:14:13 2022] GET /config/ => generated 4629 bytes in 240 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 315/315] 192.168.1.59 () {42 vars in 728 bytes} [Mon Oct 17 13:14:13 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Mon Oct 17 13:12:42 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xdaf890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 476 seconds on interpreter 0xdaf890 pid: 313 (default app)
+spawned uWSGI master process (pid: 313)
+spawned uWSGI worker 1 (pid: 494, cores: 1)
+subprocess 336 exited with code 0
+*** Starting uWSGI 2.0.20 (32bit) on [Mon Oct 17 13:27:40 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x71c890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 77 seconds on interpreter 0x71c890 pid: 308 (default app)
+spawned uWSGI master process (pid: 308)
+spawned uWSGI worker 1 (pid: 492, cores: 1)
+subprocess 333 exited with code 0
+[pid: 492|app: 0|req: 1/1] 192.168.1.59 () {44 vars in 869 bytes} [Mon Oct 17 13:36:32 2022] GET / => generated 4362 bytes in 1741 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 2/2] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:34 2022] GET /admin/jsi18n/ => generated 3343 bytes in 278 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 3/3] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:36:35 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 4/4] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 5/5] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:36:36 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 6/6] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:37 2022] GET /admin/jsi18n/ => generated 3343 bytes in 132 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 7/7] 192.168.1.59 () {52 vars in 1042 bytes} [Mon Oct 17 13:36:38 2022] POST / => generated 4101 bytes in 261 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 8/8] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 9/9] 192.168.1.59 () {52 vars in 1042 bytes} [Mon Oct 17 13:36:49 2022] POST / => generated 4362 bytes in 217 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 10/10] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 11/11] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:36:51 2022] GET / => generated 4362 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 12/12] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 13/13] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:36:52 2022] GET / => generated 4362 bytes in 214 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 14/14] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:52 2022] GET /admin/jsi18n/ => generated 3343 bytes in 195 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 15/15] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:36:54 2022] GET / => generated 4362 bytes in 173 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 16/16] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:54 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 17/17] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:36:55 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 18/18] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:55 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 19/19] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:36:57 2022] GET / => generated 4316 bytes in 211 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 20/20] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:36:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 21/21] 192.168.1.174 () {42 vars in 834 bytes} [Mon Oct 17 13:37:40 2022] GET / => generated 4316 bytes in 168 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 22/22] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:37:41 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 492|app: 0|req: 23/23] 192.168.1.174 () {42 vars in 786 bytes} [Mon Oct 17 13:37:41 2022] GET /favicon.ico => generated 3046 bytes in 394 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 24/24] 192.168.1.174 () {52 vars in 1050 bytes} [Mon Oct 17 13:37:45 2022] POST / => generated 4147 bytes in 253 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 25/25] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:37:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 194 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 26/26] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 13:37:47 2022] GET / => generated 4101 bytes in 226 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 27/27] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:37:47 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 28/28] 192.168.1.174 () {52 vars in 1050 bytes} [Mon Oct 17 13:38:09 2022] POST / => generated 4362 bytes in 270 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 29/29] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:38:09 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 30/30] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 13:38:11 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 31/31] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:38:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 32/32] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 13:38:12 2022] GET / => generated 4362 bytes in 203 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 33/33] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:38:12 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 34/34] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 13:38:14 2022] GET / => generated 4316 bytes in 168 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 35/35] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:38:14 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 36/36] 192.168.1.174 () {52 vars in 1050 bytes} [Mon Oct 17 13:38:19 2022] POST / => generated 4147 bytes in 254 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 37/37] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:38:19 2022] GET /admin/jsi18n/ => generated 3343 bytes in 135 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 38/38] 192.168.1.174 () {46 vars in 901 bytes} [Mon Oct 17 13:38:20 2022] GET / => generated 4101 bytes in 189 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 39/39] 192.168.1.174 () {42 vars in 729 bytes} [Mon Oct 17 13:38:21 2022] GET /admin/jsi18n/ => generated 3343 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 40/40] 192.168.1.174 () {44 vars in 884 bytes} [Mon Oct 17 13:38:26 2022] GET /config/ => generated 4629 bytes in 202 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 41/41] 192.168.1.174 () {42 vars in 736 bytes} [Mon Oct 17 13:38:27 2022] GET /admin/jsi18n/ => generated 3343 bytes in 194 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 42/42] 192.168.1.59 () {44 vars in 876 bytes} [Mon Oct 17 13:39:01 2022] GET /config/ => generated 4629 bytes in 251 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 43/43] 192.168.1.59 () {42 vars in 728 bytes} [Mon Oct 17 13:39:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 44/44] 192.168.1.59 () {44 vars in 869 bytes} [Mon Oct 17 13:39:03 2022] GET / => generated 4101 bytes in 288 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 45/45] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:39:04 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 46/46] 192.168.1.59 () {52 vars in 1042 bytes} [Mon Oct 17 13:50:56 2022] POST / => generated 4362 bytes in 215 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 47/47] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:50:56 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 48/48] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:50:57 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 49/49] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:50:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 50/50] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:50:59 2022] GET / => generated 4362 bytes in 213 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 51/51] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:50:59 2022] GET /admin/jsi18n/ => generated 3343 bytes in 169 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 52/52] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:51:00 2022] GET / => generated 4362 bytes in 175 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 53/53] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:51:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 54/54] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:51:02 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 55/55] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:51:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 56/56] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:51:03 2022] GET / => generated 4316 bytes in 210 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 57/57] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:51:04 2022] GET /admin/jsi18n/ => generated 3343 bytes in 164 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 58/58] 192.168.1.59 () {52 vars in 1042 bytes} [Mon Oct 17 13:55:47 2022] POST / => generated 4147 bytes in 214 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 59/59] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:55:48 2022] GET /admin/jsi18n/ => generated 3343 bytes in 143 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 60/60] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:55:49 2022] GET / => generated 4101 bytes in 177 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 61/61] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:55:49 2022] GET /admin/jsi18n/ => generated 3343 bytes in 157 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 62/62] 192.168.1.59 () {52 vars in 1042 bytes} [Mon Oct 17 13:56:05 2022] POST / => generated 4362 bytes in 216 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 63/63] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:56:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 126 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 64/64] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:56:07 2022] GET / => generated 4362 bytes in 289 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 65/65] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:56:07 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 66/66] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:56:08 2022] GET / => generated 4362 bytes in 171 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 67/67] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:56:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 68/68] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:56:10 2022] GET / => generated 4362 bytes in 174 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 69/69] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:56:10 2022] GET /admin/jsi18n/ => generated 3343 bytes in 134 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 70/70] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:56:11 2022] GET / => generated 4316 bytes in 278 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 71/71] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:56:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 72/72] 192.168.1.59 () {52 vars in 1042 bytes} [Mon Oct 17 13:56:16 2022] POST / => generated 4147 bytes in 229 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 73/73] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:56:16 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 74/74] 192.168.1.59 () {46 vars in 893 bytes} [Mon Oct 17 13:56:18 2022] GET / => generated 4101 bytes in 175 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 75/75] 192.168.1.59 () {42 vars in 721 bytes} [Mon Oct 17 13:56:18 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 76/76] 192.168.1.59 () {44 vars in 878 bytes} [Mon Oct 17 14:09:01 2022] GET /monitor/ => generated 4381 bytes in 198 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 77/77] 192.168.1.59 () {42 vars in 729 bytes} [Mon Oct 17 14:09:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 78/78] 192.168.1.59 () {44 vars in 886 bytes} [Mon Oct 17 14:24:02 2022] GET /monitor/ => generated 4904 bytes in 238 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 79/79] 192.168.1.59 () {42 vars in 729 bytes} [Mon Oct 17 14:24:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 80/80] 192.168.1.59 () {44 vars in 886 bytes} [Mon Oct 17 14:40:04 2022] GET /monitor/ => generated 5462 bytes in 313 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 81/81] 192.168.1.59 () {42 vars in 729 bytes} [Mon Oct 17 14:40:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 82/82] 192.168.1.59 () {44 vars in 886 bytes} [Mon Oct 17 14:53:58 2022] GET /monitor/ => generated 5946 bytes in 477 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 83/83] 192.168.1.59 () {42 vars in 729 bytes} [Mon Oct 17 14:53:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 84/84] 192.168.1.59 () {44 vars in 886 bytes} [Mon Oct 17 15:16:12 2022] GET /monitor/ => generated 6714 bytes in 502 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 85/85] 192.168.1.59 () {42 vars in 729 bytes} [Mon Oct 17 15:16:13 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Mon Oct 17 15:17:29 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xac1890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 10323 seconds on interpreter 0xac1890 pid: 314 (default app)
+spawned uWSGI master process (pid: 314)
+spawned uWSGI worker 1 (pid: 495, cores: 1)
+subprocess 338 exited with code 0
+*** Starting uWSGI 2.0.20 (32bit) on [Mon Oct 17 18:17:20 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x16e4890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 56826 seconds on interpreter 0x16e4890 pid: 313 (default app)
+spawned uWSGI master process (pid: 313)
+spawned uWSGI worker 1 (pid: 524, cores: 1)
+subprocess 334 exited with code 0

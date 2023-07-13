@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>PCB Tools</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/admin/css/base.css">
+  <link rel="stylesheet" href="/static/admin/css/dark_mode.css">
+  <link rel="stylesheet" href="/static/admin/css/nav_sidebar.css">
+  <script src="/static/admin/js/nav_sidebar.js" defer></script>
+  <link rel="stylesheet" href="/static/admin/css/changelists.css">
+  <script src="/admin/jsi18n/"></script>
+  <script src="/static/admin/js/vendor/jquery/jquery.js"></script>
+  <script src="/static/admin/js/jquery.init.js"></script>
+  <script src="/static/admin/js/core.js"></script>
+  <script src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+  <script src="/static/admin/js/actions.js"></script>
+  <script src="/static/admin/js/urlify.js"></script>
+  <script src="/static/admin/js/prepopulate.js"></script>
+  <script src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+  <script src="/static/admin/js/filters.js" defer></script>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="/static/admin/css/responsive.css">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Add additional CSS in static file -->
+  <link rel="stylesheet" href="/static/admin/css/toggle_switch.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <!-- 네비게이션바 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'index' %}" style="color:#0d6aa8;">Hummidity Chamber</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          {% if user.is_authenticated %}  
+            <a class="nav-link" href="{% url 'accounts:logout' %}">{{ user.last_name }}{{ user.first_name }} (Logout)</a>
+          {% else %}
+            <a class="nav-link" href="{% url 'accounts:login' %}">Login</a>
+          {% endif %}
+          <a class="nav-link" href="{% url 'accounts:change_pw' %}">Change password</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+      {% block sidebar %}
+        <ul class="sidebar-nav">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'monitor-graph' %}">T/H Graph</a></li>
+          <li><a href="{% url 'config-request' %}">Settings</a></li>
+          <li><a href="{% url 'watering-request' %}">Watering</a></li>
+        </ul>
+     {% endblock %}
+      </div>
+      <div class="col-sm-10">{% block content %}{% endblock %}</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container my-3">
+    <form method="post" action="{% url 'accounts:login' %}">
+        {% csrf_token %}
+        <table style="width: 100%; test-text_align: center;">
+          <tr><td>
+            <li style="font-size: 25px;">LOGIN</li>
+          </tr></td>
+        </table>
+        {% include "form_errors.html" %}
+        <div class="mb-3">
+            <label for="username">User ID</label>
+            <input type="text" class="form-control" name="username" id="username"
+                   value="{{ form.username.value|default_if_none:'' }}">
+        </div>
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="password"
+                   value="{{ form.password.value|default_if_none:'' }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
+{% endblock %}

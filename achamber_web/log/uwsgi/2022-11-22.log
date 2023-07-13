@@ -1,0 +1,1030 @@
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 10:29:55 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x9e0890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 109 seconds on interpreter 0x9e0890 pid: 310 (default app)
+spawned uWSGI master process (pid: 310)
+spawned uWSGI worker 1 (pid: 491, cores: 1)
+subprocess 335 exited with code 0
+[pid: 491|app: 0|req: 1/1] 94.102.61.48 () {34 vars in 472 bytes} [Tue Nov 22 10:32:24 2022] GET / => generated 0 bytes in 714 msecs (HTTP/1.1 302) 8 headers in 257 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 2/2] 94.102.61.48 () {36 vars in 558 bytes} [Tue Nov 22 10:32:25 2022] GET /accounts/login/?next=/ => generated 3934 bytes in 815 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 10:39:52 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x2ab890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1489 seconds on interpreter 0x2ab890 pid: 321 (default app)
+spawned uWSGI master process (pid: 321)
+spawned uWSGI worker 1 (pid: 491, cores: 1)
+subprocess 339 exited with code 0
+[pid: 491|app: 0|req: 1/1] 192.168.0.1 () {42 vars in 1405 bytes} [Tue Nov 22 11:05:02 2022] GET / => generated 4161 bytes in 1766 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 2/2] 192.168.0.1 () {42 vars in 1309 bytes} [Tue Nov 22 11:05:04 2022] GET /admin/jsi18n/ => generated 3343 bytes in 196 msecs (HTTP/1.1 200) 7 headers in 230 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 491|app: 0|req: 3/3] 192.168.0.1 () {42 vars in 1366 bytes} [Tue Nov 22 11:05:05 2022] GET /favicon.ico => generated 3055 bytes in 285 msecs (HTTP/1.1 404) 6 headers in 215 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 4/4] 192.168.0.1 () {44 vars in 1466 bytes} [Tue Nov 22 11:05:08 2022] GET /monitor/ => generated 47571 bytes in 5155 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 5/5] 192.168.0.1 () {42 vars in 1317 bytes} [Tue Nov 22 11:05:13 2022] GET /admin/jsi18n/ => generated 3343 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '_'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/hjung/Achamber/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '_'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[pid: 491|app: 0|req: 6/6] 164.92.122.154 () {26 vars in 262 bytes} [Tue Nov 22 11:23:03 2022] GET / => generated 55721 bytes in 1233 msecs (HTTP/1.0 400) 4 headers in 172 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 7/7] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 11:28:02 2022] GET /monitor/ => generated 48364 bytes in 5126 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 8/8] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 11:28:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 11:38:26 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x142f890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 189 seconds on interpreter 0x142f890 pid: 315 (default app)
+spawned uWSGI master process (pid: 315)
+spawned uWSGI worker 1 (pid: 494, cores: 1)
+subprocess 337 exited with code 0
+[pid: 494|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1401 bytes} [Tue Nov 22 12:08:44 2022] GET /config/ => generated 5161 bytes in 1642 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 494|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1245 bytes} [Tue Nov 22 12:08:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 187 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 494|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1418 bytes} [Tue Nov 22 12:08:47 2022] GET /config/watering/ => generated 3829 bytes in 188 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 494|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:08:47 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 494|app: 0|req: 5/5] 147.47.212.218 () {44 vars in 1411 bytes} [Tue Nov 22 12:08:49 2022] GET /monitor/ => generated 49764 bytes in 5485 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 494|app: 0|req: 6/6] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:08:54 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:20:01 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1984890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1984890 pid: 3730 (default app)
+spawned uWSGI master process (pid: 3730)
+spawned uWSGI worker 1 (pid: 3780, cores: 1)
+subprocess 3731 exited with code 0
+[pid: 3780|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:20:13 2022] GET /monitor/ => generated 50219 bytes in 7642 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 3780|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:20:20 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 3780|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1425 bytes} [Tue Nov 22 12:20:33 2022] GET /monitor/delete_all/ => generated 6590 bytes in 215 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 3780|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1257 bytes} [Tue Nov 22 12:20:34 2022] GET /admin/jsi18n/ => generated 3343 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:23:35 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xe7f890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0xe7f890 pid: 4901 (default app)
+spawned uWSGI master process (pid: 4901)
+spawned uWSGI worker 1 (pid: 4948, cores: 1)
+subprocess 4904 exited with code 0
+[pid: 4948|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1414 bytes} [Tue Nov 22 12:23:46 2022] GET /monitor/ => generated 6832 bytes in 1812 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 4948|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:23:48 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:24:25 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1039890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1039890 pid: 5179 (default app)
+spawned uWSGI master process (pid: 5179)
+spawned uWSGI worker 1 (pid: 5224, cores: 1)
+subprocess 5180 exited with code 0
+[pid: 5224|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:24:36 2022] GET /monitor/ => generated 6833 bytes in 1783 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 5224|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:24:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:25:12 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x721890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x721890 pid: 5436 (default app)
+spawned uWSGI master process (pid: 5436)
+spawned uWSGI worker 1 (pid: 5487, cores: 1)
+subprocess 5442 exited with code 0
+[pid: 5487|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:25:23 2022] GET /monitor/ => generated 6866 bytes in 1836 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 5487|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:25:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:25:47 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1e0890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1e0890 pid: 5633 (default app)
+spawned uWSGI master process (pid: 5633)
+spawned uWSGI worker 1 (pid: 5678, cores: 1)
+subprocess 5634 exited with code 0
+[pid: 5678|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:25:57 2022] GET /monitor/ => generated 6905 bytes in 1681 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 5678|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:25:59 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 5678|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:27:51 2022] GET /monitor/ => generated 6975 bytes in 284 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 5678|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:27:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 5678|app: 0|req: 5/5] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:33:46 2022] GET /monitor/ => generated 7185 bytes in 201 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 5678|app: 0|req: 6/6] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:33:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 5678|app: 0|req: 7/7] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:35:24 2022] GET /monitor/ => generated 7220 bytes in 207 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 5678|app: 0|req: 8/8] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:35:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 5678|app: 0|req: 9/9] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:35:39 2022] GET /monitor/ => generated 7220 bytes in 310 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 5678|app: 0|req: 10/10] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:35:40 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:36:51 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1392890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1392890 pid: 9244 (default app)
+spawned uWSGI master process (pid: 9244)
+spawned uWSGI worker 1 (pid: 9289, cores: 1)
+subprocess 9245 exited with code 0
+[pid: 9289|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:37:01 2022] GET /monitor/ => generated 7199 bytes in 1845 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 9289|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:37:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:37:20 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x6fe890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x6fe890 pid: 9411 (default app)
+spawned uWSGI master process (pid: 9411)
+spawned uWSGI worker 1 (pid: 9463, cores: 1)
+subprocess 9412 exited with code 0
+[pid: 9463|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:37:31 2022] GET /monitor/ => generated 7171 bytes in 1847 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 9463|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:37:33 2022] GET /admin/jsi18n/ => generated 3343 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:38:39 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xf24890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0xf24890 pid: 9849 (default app)
+spawned uWSGI master process (pid: 9849)
+spawned uWSGI worker 1 (pid: 9900, cores: 1)
+subprocess 9852 exited with code 0
+[pid: 9900|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:38:49 2022] GET /monitor/ => generated 7245 bytes in 1740 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 9900|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:38:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1419 bytes} [Tue Nov 22 12:39:24 2022] GET /config/watering/ => generated 3829 bytes in 276 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 5/5] 147.47.212.218 () {52 vars in 1616 bytes} [Tue Nov 22 12:39:26 2022] POST /config/watering/ => generated 3902 bytes in 178 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 6/6] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:26 2022] GET /admin/jsi18n/ => generated 3343 bytes in 128 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 7/7] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:27 2022] GET /config/watering/ => generated 3902 bytes in 177 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 8/8] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:27 2022] GET /admin/jsi18n/ => generated 3343 bytes in 192 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 9/9] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:29 2022] GET /config/watering/ => generated 3902 bytes in 138 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 10/10] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:29 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 11/11] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:30 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 12/12] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 13/13] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:31 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 14/14] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:32 2022] GET /admin/jsi18n/ => generated 3343 bytes in 125 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 15/15] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:33 2022] GET /config/watering/ => generated 3902 bytes in 178 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 16/16] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:33 2022] GET /admin/jsi18n/ => generated 3343 bytes in 196 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 17/17] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:34 2022] GET /config/watering/ => generated 3902 bytes in 140 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 18/18] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:34 2022] GET /admin/jsi18n/ => generated 3343 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 19/19] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:36 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 20/20] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:36 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 21/21] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:37 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 22/22] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:37 2022] GET /admin/jsi18n/ => generated 3343 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 23/23] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:38 2022] GET /config/watering/ => generated 3902 bytes in 167 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 24/24] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 190 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 25/25] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:40 2022] GET /config/watering/ => generated 3902 bytes in 177 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 26/26] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:40 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 27/27] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:41 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 28/28] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:41 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 29/29] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:43 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 30/30] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:43 2022] GET /admin/jsi18n/ => generated 3343 bytes in 125 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 31/31] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:44 2022] GET /config/watering/ => generated 3902 bytes in 152 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 32/32] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:44 2022] GET /admin/jsi18n/ => generated 3343 bytes in 203 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 33/33] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:45 2022] GET /config/watering/ => generated 3902 bytes in 170 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 34/34] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 35/35] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:47 2022] GET /config/watering/ => generated 3902 bytes in 295 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 36/36] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:47 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 37/37] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:48 2022] GET /config/watering/ => generated 3902 bytes in 165 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 38/38] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:48 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 39/39] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:50 2022] GET /config/watering/ => generated 3902 bytes in 238 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 9900|app: 0|req: 40/40] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 122 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 41/41] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:51 2022] GET /config/watering/ => generated 3902 bytes in 137 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 42/42] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:51 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 43/43] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:53 2022] GET /config/watering/ => generated 3902 bytes in 133 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 44/44] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:53 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 45/45] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:54 2022] GET /config/watering/ => generated 3902 bytes in 164 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 46/46] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:54 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 47/47] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:55 2022] GET /config/watering/ => generated 3902 bytes in 240 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 48/48] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:56 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 49/49] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:57 2022] GET /config/watering/ => generated 3902 bytes in 146 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 50/50] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 51/51] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:58 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 52/52] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:39:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 53/53] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:39:59 2022] GET /config/watering/ => generated 3902 bytes in 164 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 54/54] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:00 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 55/55] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:01 2022] GET /config/watering/ => generated 3902 bytes in 243 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 56/56] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 57/57] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:02 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 58/58] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:03 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 59/59] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:04 2022] GET /config/watering/ => generated 3902 bytes in 138 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 60/60] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:04 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 61/61] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:05 2022] GET /config/watering/ => generated 3902 bytes in 164 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 62/62] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:05 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 63/63] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:06 2022] GET /config/watering/ => generated 3902 bytes in 246 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 64/64] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:07 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 65/65] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:08 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 66/66] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:08 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 67/67] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:09 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 68/68] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:09 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 69/69] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:11 2022] GET /config/watering/ => generated 3902 bytes in 162 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 70/70] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:11 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 71/71] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:12 2022] GET /config/watering/ => generated 3902 bytes in 248 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 72/72] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:12 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 73/73] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:13 2022] GET /config/watering/ => generated 3902 bytes in 133 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 74/74] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:14 2022] GET /admin/jsi18n/ => generated 3343 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 75/75] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:15 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 76/76] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:15 2022] GET /admin/jsi18n/ => generated 3343 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 77/77] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:16 2022] GET /config/watering/ => generated 3902 bytes in 167 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 78/78] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:16 2022] GET /admin/jsi18n/ => generated 3343 bytes in 298 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 79/79] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:18 2022] GET /config/watering/ => generated 3902 bytes in 197 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 80/80] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:18 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 81/81] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:19 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 82/82] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:19 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 83/83] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:21 2022] GET /config/watering/ => generated 3902 bytes in 134 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 84/84] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:21 2022] GET /admin/jsi18n/ => generated 3343 bytes in 144 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 85/85] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:22 2022] GET /config/watering/ => generated 3902 bytes in 176 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 86/86] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:22 2022] GET /admin/jsi18n/ => generated 3343 bytes in 150 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 87/87] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:23 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 88/88] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 89/89] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:25 2022] GET /config/watering/ => generated 3902 bytes in 133 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 90/90] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 91/91] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:26 2022] GET /config/watering/ => generated 3902 bytes in 131 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 92/92] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:26 2022] GET /admin/jsi18n/ => generated 3343 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 93/93] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:28 2022] GET /config/watering/ => generated 3902 bytes in 263 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 94/94] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 95/95] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:29 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 96/96] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:29 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 97/97] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:30 2022] GET /config/watering/ => generated 3902 bytes in 257 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 98/98] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 99/99] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:32 2022] GET /config/watering/ => generated 3902 bytes in 154 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 100/100] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:32 2022] GET /admin/jsi18n/ => generated 3343 bytes in 193 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 101/101] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:33 2022] GET /config/watering/ => generated 3902 bytes in 196 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 102/102] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:34 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 103/103] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:35 2022] GET /config/watering/ => generated 3902 bytes in 137 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 104/104] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 105/105] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:36 2022] GET /config/watering/ => generated 3902 bytes in 252 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 106/106] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:36 2022] GET /admin/jsi18n/ => generated 3343 bytes in 294 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 107/107] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:38 2022] GET /config/watering/ => generated 3902 bytes in 252 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 108/108] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 109/109] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:39 2022] GET /config/watering/ => generated 3902 bytes in 137 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 110/110] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:39 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 111/111] 147.47.212.218 () {46 vars in 1458 bytes} [Tue Nov 22 12:40:41 2022] GET /config/watering/ => generated 3902 bytes in 406 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 9900|app: 0|req: 112/112] 147.47.212.218 () {42 vars in 1254 bytes} [Tue Nov 22 12:40:41 2022] GET /admin/jsi18n/ => generated 3343 bytes in 430 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock removed.
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 12:41:05 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x835890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 33 seconds on interpreter 0x835890 pid: 308 (default app)
+spawned uWSGI master process (pid: 308)
+spawned uWSGI worker 1 (pid: 491, cores: 1)
+subprocess 333 exited with code 0
+[pid: 491|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 12:53:34 2022] GET /monitor/ => generated 7245 bytes in 1881 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 12:53:36 2022] GET /admin/jsi18n/ => generated 3343 bytes in 123 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 3/3] 192.168.0.1 () {42 vars in 841 bytes} [Tue Nov 22 12:54:58 2022] GET / => generated 4161 bytes in 284 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 4/4] 192.168.0.1 () {42 vars in 745 bytes} [Tue Nov 22 12:54:58 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 5/5] 192.168.0.1 () {44 vars in 918 bytes} [Tue Nov 22 12:55:15 2022] GET /config/watering/ => generated 3902 bytes in 258 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 6/6] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:15 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 7/7] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:16 2022] GET /config/watering/ => generated 3902 bytes in 146 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 8/8] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:17 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 9/9] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:18 2022] GET /config/watering/ => generated 3902 bytes in 160 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 10/10] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:18 2022] GET /admin/jsi18n/ => generated 3343 bytes in 155 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 11/11] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:20 2022] GET /config/watering/ => generated 3902 bytes in 136 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 12/12] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:20 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 13/13] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:21 2022] GET /config/watering/ => generated 3902 bytes in 152 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 14/14] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:22 2022] GET /admin/jsi18n/ => generated 3343 bytes in 123 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 15/15] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:23 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 16/16] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:23 2022] GET /admin/jsi18n/ => generated 3343 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 17/17] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:25 2022] GET /config/watering/ => generated 3902 bytes in 133 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 18/18] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 211 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 19/19] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:26 2022] GET /config/watering/ => generated 3902 bytes in 133 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 20/20] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:27 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 21/21] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:28 2022] GET /config/watering/ => generated 3902 bytes in 131 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 22/22] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 140 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 23/23] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:30 2022] GET /config/watering/ => generated 3902 bytes in 131 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 24/24] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 25/25] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:31 2022] GET /config/watering/ => generated 3902 bytes in 132 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 26/26] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 27/27] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:33 2022] GET /config/watering/ => generated 3902 bytes in 155 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 28/28] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:33 2022] GET /admin/jsi18n/ => generated 3343 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 29/29] 192.168.0.1 () {46 vars in 965 bytes} [Tue Nov 22 12:55:34 2022] GET /config/watering/ => generated 3902 bytes in 131 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 30/30] 192.168.0.1 () {42 vars in 761 bytes} [Tue Nov 22 12:55:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 137 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 31/31] 192.168.0.1 () {44 vars in 916 bytes} [Tue Nov 22 12:55:36 2022] GET /config/ => generated 5161 bytes in 187 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 32/32] 192.168.0.1 () {42 vars in 752 bytes} [Tue Nov 22 12:55:36 2022] GET /admin/jsi18n/ => generated 3343 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 33/33] 192.168.0.1 () {52 vars in 1098 bytes} [Tue Nov 22 12:55:47 2022] POST /config/ => generated 5311 bytes in 389 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 34/34] 192.168.0.1 () {42 vars in 752 bytes} [Tue Nov 22 12:55:47 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 35/35] 192.168.0.1 () {52 vars in 1098 bytes} [Tue Nov 22 12:56:01 2022] POST /config/ => generated 5311 bytes in 278 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 36/36] 192.168.0.1 () {42 vars in 752 bytes} [Tue Nov 22 12:56:01 2022] GET /admin/jsi18n/ => generated 3343 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 37/37] 192.168.0.1 () {44 vars in 916 bytes} [Tue Nov 22 12:56:20 2022] GET /config/ => generated 5161 bytes in 143 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 38/38] 192.168.0.1 () {42 vars in 1405 bytes} [Tue Nov 22 12:59:10 2022] GET / => generated 4161 bytes in 168 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 39/39] 192.168.0.1 () {42 vars in 1309 bytes} [Tue Nov 22 12:59:10 2022] GET /admin/jsi18n/ => generated 3343 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 491|app: 0|req: 40/40] 192.168.0.1 () {42 vars in 1366 bytes} [Tue Nov 22 12:59:10 2022] GET /favicon.ico => generated 3055 bytes in 280 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 41/41] 192.168.0.1 () {42 vars in 1417 bytes} [Tue Nov 22 12:59:32 2022] GET /admin/ => generated 8841 bytes in 1450 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 42/42] 192.168.0.1 () {44 vars in 1496 bytes} [Tue Nov 22 12:59:40 2022] GET /admin/status/status/ => generated 8335 bytes in 1216 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 43/43] 192.168.0.1 () {42 vars in 1329 bytes} [Tue Nov 22 12:59:42 2022] GET /admin/jsi18n/ => generated 3343 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 44/44] 192.168.0.1 () {44 vars in 1516 bytes} [Tue Nov 22 12:59:49 2022] GET /admin/config/configtbl/ => generated 10471 bytes in 826 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 45/45] 192.168.0.1 () {42 vars in 1332 bytes} [Tue Nov 22 12:59:50 2022] GET /admin/jsi18n/ => generated 3343 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 46/46] 192.168.0.1 () {44 vars in 1517 bytes} [Tue Nov 22 12:59:54 2022] GET /admin/monitor/monitor/ => generated 13740 bytes in 1105 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 47/47] 192.168.0.1 () {42 vars in 1331 bytes} [Tue Nov 22 12:59:55 2022] GET /admin/jsi18n/ => generated 3343 bytes in 181 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 48/48] 192.168.0.1 () {42 vars in 1405 bytes} [Tue Nov 22 13:02:10 2022] GET / => generated 4161 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 49/49] 192.168.0.1 () {42 vars in 1309 bytes} [Tue Nov 22 13:02:10 2022] GET /admin/jsi18n/ => generated 3343 bytes in 126 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 50/50] 192.168.0.1 () {44 vars in 1466 bytes} [Tue Nov 22 13:02:12 2022] GET /monitor/ => generated 7488 bytes in 342 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 51/51] 192.168.0.1 () {42 vars in 1317 bytes} [Tue Nov 22 13:02:13 2022] GET /admin/jsi18n/ => generated 3343 bytes in 115 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 52/52] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 13:10:43 2022] GET /monitor/ => generated 7803 bytes in 274 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 53/53] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 13:10:43 2022] GET /admin/jsi18n/ => generated 3343 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 13:17:20 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1001890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 663 seconds on interpreter 0x1001890 pid: 313 (default app)
+spawned uWSGI master process (pid: 313)
+spawned uWSGI worker 1 (pid: 491, cores: 1)
+subprocess 334 exited with code 0
+[pid: 491|app: 0|req: 1/1] 147.47.212.218 () {46 vars in 1434 bytes} [Tue Nov 22 13:28:26 2022] GET /monitor/ => generated 8710 bytes in 4766 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 13:28:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 366 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 13:36:09 2022] GET /monitor/ => generated 9053 bytes in 535 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 13:36:09 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 5/5] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 13:42:28 2022] GET /monitor/ => generated 9469 bytes in 587 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 6/6] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 13:42:28 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 7/7] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 13:49:29 2022] GET /monitor/ => generated 9951 bytes in 495 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 8/8] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 13:49:30 2022] GET /admin/jsi18n/ => generated 3343 bytes in 193 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 9/9] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 14:20:01 2022] GET /monitor/ => generated 11209 bytes in 750 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 10/10] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 14:20:02 2022] GET /admin/jsi18n/ => generated 3343 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 14:35:55 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1ae6890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 156 seconds on interpreter 0x1ae6890 pid: 315 (default app)
+spawned uWSGI master process (pid: 315)
+spawned uWSGI worker 1 (pid: 491, cores: 1)
+subprocess 335 exited with code 0
+[pid: 491|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 14:54:11 2022] GET /monitor/ => generated 12607 bytes in 2392 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 14:54:13 2022] GET /admin/jsi18n/ => generated 3343 bytes in 123 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 15:17:45 2022] GET /monitor/ => generated 13655 bytes in 922 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 15:17:46 2022] GET /admin/jsi18n/ => generated 3343 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 5/5] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 15:19:23 2022] GET /monitor/ => generated 13690 bytes in 905 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 6/6] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 15:19:24 2022] GET /admin/jsi18n/ => generated 3343 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 15:17:21 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x13f5890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 356 seconds on interpreter 0x13f5890 pid: 313 (default app)
+spawned uWSGI master process (pid: 313)
+spawned uWSGI worker 1 (pid: 491, cores: 1)
+subprocess 336 exited with code 0
+[pid: 491|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 15:26:21 2022] GET /monitor/ => generated 14143 bytes in 4521 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 15:26:25 2022] GET /admin/jsi18n/ => generated 3343 bytes in 138 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 491|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 15:28:12 2022] GET /monitor/ => generated 14178 bytes in 1091 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 491|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 15:28:13 2022] GET /admin/jsi18n/ => generated 3343 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           *** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 15:39:54 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x96f890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 381 seconds on interpreter 0x96f890 pid: 313 (default app)
+spawned uWSGI master process (pid: 313)
+spawned uWSGI worker 1 (pid: 494, cores: 1)
+subprocess 337 exited with code 0
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 16:49:29 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x14f5890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 16 seconds on interpreter 0x14f5890 pid: 311 (default app)
+spawned uWSGI master process (pid: 311)
+spawned uWSGI worker 1 (pid: 486, cores: 1)
+subprocess 336 exited with code 0
+[pid: 486|app: 0|req: 1/1] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 17:08:54 2022] GET /monitor/ => generated 18402 bytes in 3238 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 486|app: 0|req: 2/2] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 17:08:57 2022] GET /admin/jsi18n/ => generated 3343 bytes in 122 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 486|app: 0|req: 3/3] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 17:29:29 2022] GET /monitor/ => generated 19447 bytes in 1696 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 486|app: 0|req: 4/4] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 17:29:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 486|app: 0|req: 5/5] 147.47.212.218 () {44 vars in 1403 bytes} [Tue Nov 22 17:54:19 2022] GET /monitor/ => generated 20632 bytes in 1668 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 486|app: 0|req: 6/6] 147.47.212.218 () {42 vars in 1246 bytes} [Tue Nov 22 17:54:21 2022] GET /admin/jsi18n/ => generated 3343 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 18:46:12 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0xbca890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 16 seconds on interpreter 0xbca890 pid: 310 (default app)
+spawned uWSGI master process (pid: 310)
+spawned uWSGI worker 1 (pid: 488, cores: 1)
+subprocess 337 exited with code 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            *** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 19:17:21 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x2e3890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 899 seconds on interpreter 0x2e3890 pid: 314 (default app)
+spawned uWSGI master process (pid: 314)
+spawned uWSGI worker 1 (pid: 492, cores: 1)
+subprocess 333 exited with code 0
+[pid: 492|app: 0|req: 1/1] 211.47.126.49 () {44 vars in 860 bytes} [Tue Nov 22 19:34:31 2022] GET / => generated 4170 bytes in 1685 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 2/2] 211.47.126.49 () {42 vars in 740 bytes} [Tue Nov 22 19:34:33 2022] GET /admin/jsi18n/ => generated 0 bytes in 446 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 3/3] 211.47.126.49 () {42 vars in 777 bytes} [Tue Nov 22 19:34:34 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 865 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 492|app: 0|req: 4/4] 211.47.126.49 () {42 vars in 797 bytes} [Tue Nov 22 19:34:35 2022] GET /favicon.ico => generated 3055 bytes in 283 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 5/5] 211.47.126.49 () {44 vars in 897 bytes} [Tue Nov 22 19:34:38 2022] GET /monitor/ => generated 25696 bytes in 2296 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 6/6] 211.47.126.49 () {42 vars in 748 bytes} [Tue Nov 22 19:34:40 2022] GET /admin/jsi18n/ => generated 0 bytes in 86 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 7/7] 211.47.126.49 () {42 vars in 785 bytes} [Tue Nov 22 19:34:40 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 279 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   *** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 19:40:27 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1f70890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 496 seconds on interpreter 0x1f70890 pid: 314 (default app)
+spawned uWSGI master process (pid: 314)
+spawned uWSGI worker 1 (pid: 493, cores: 1)
+subprocess 335 exited with code 0
+[pid: 493|app: 0|req: 1/1] 211.47.126.49 () {44 vars in 905 bytes} [Tue Nov 22 20:01:06 2022] GET /monitor/ => generated 26742 bytes in 3949 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 493|app: 0|req: 2/2] 211.47.126.49 () {42 vars in 748 bytes} [Tue Nov 22 20:01:10 2022] GET /admin/jsi18n/ => generated 0 bytes in 436 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 493|app: 0|req: 3/3] 211.47.126.49 () {42 vars in 785 bytes} [Tue Nov 22 20:01:10 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 779 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       *** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 20:05:20 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1785890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 795 seconds on interpreter 0x1785890 pid: 309 (default app)
+spawned uWSGI master process (pid: 309)
+spawned uWSGI worker 1 (pid: 493, cores: 1)
+subprocess 329 exited with code 0
+[pid: 493|app: 0|req: 1/1] 147.47.212.158 () {44 vars in 906 bytes} [Tue Nov 22 20:30:25 2022] GET /monitor/ => generated 28101 bytes in 4004 msecs (HTTP/1.1 200) 7 headers in 223 bytes (2 switches on core 0)
+[pid: 493|app: 0|req: 2/2] 147.47.212.158 () {42 vars in 749 bytes} [Tue Nov 22 20:30:29 2022] GET /admin/jsi18n/ => generated 0 bytes in 413 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 493|app: 0|req: 3/3] 147.47.212.158 () {42 vars in 786 bytes} [Tue Nov 22 20:30:30 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 776 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 20:35:13 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1e03890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2141 seconds on interpreter 0x1e03890 pid: 315 (default app)
+spawned uWSGI master process (pid: 315)
+spawned uWSGI worker 1 (pid: 493, cores: 1)
+subprocess 332 exited with code 0
+*** Starting uWSGI 2.0.20 (32bit) on [Tue Nov 22 21:18:59 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x205d890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1781 seconds on interpreter 0x205d890 pid: 314 (default app)
+spawned uWSGI master process (pid: 314)
+spawned uWSGI worker 1 (pid: 492, cores: 1)
+subprocess 337 exited with code 0
+[pid: 492|app: 0|req: 1/1] 211.47.126.49 () {44 vars in 905 bytes} [Tue Nov 22 21:48:42 2022] GET /monitor/ => generated 32177 bytes in 9490 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 2/2] 211.47.126.49 () {42 vars in 748 bytes} [Tue Nov 22 21:48:52 2022] GET /admin/jsi18n/ => generated 0 bytes in 414 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 3/3] 211.47.126.49 () {42 vars in 785 bytes} [Tue Nov 22 21:48:52 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 824 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 4/4] 211.47.126.49 () {44 vars in 927 bytes} [Tue Nov 22 21:49:09 2022] GET /monitor/delete_all/ => generated 6589 bytes in 201 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 5/5] 211.47.126.49 () {42 vars in 759 bytes} [Tue Nov 22 21:49:10 2022] GET /admin/jsi18n/ => generated 0 bytes in 95 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 6/6] 211.47.126.49 () {42 vars in 796 bytes} [Tue Nov 22 21:49:10 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 267 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 7/7] 211.47.126.49 () {44 vars in 916 bytes} [Tue Nov 22 21:49:12 2022] GET /monitor/ => generated 6589 bytes in 173 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 8/8] 211.47.126.49 () {42 vars in 748 bytes} [Tue Nov 22 21:49:12 2022] GET /admin/jsi18n/ => generated 0 bytes in 85 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 9/9] 211.47.126.49 () {42 vars in 785 bytes} [Tue Nov 22 21:49:12 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 264 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 10/10] 211.47.126.49 () {44 vars in 905 bytes} [Tue Nov 22 22:00:40 2022] GET /monitor/ => generated 7078 bytes in 226 msecs (HTTP/1.1 200) 7 headers in 222 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 11/11] 211.47.126.49 () {42 vars in 748 bytes} [Tue Nov 22 22:00:41 2022] GET /admin/jsi18n/ => generated 0 bytes in 85 msecs (HTTP/1.1 302) 8 headers in 267 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 12/12] 211.47.126.49 () {42 vars in 785 bytes} [Tue Nov 22 22:00:41 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2390 bytes in 268 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 13/13] 103.203.57.20 () {34 vars in 375 bytes} [Wed Nov 23 01:15:44 2022] GET / => generated 0 bytes in 38 msecs (HTTP/1.1 302) 8 headers in 257 bytes (1 switches on core 0)

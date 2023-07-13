@@ -1,0 +1,158 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  {% load humanize %}
+
+  <div style="width: auto; height: auto; float: left; border-radius: 30px; border: 8px solid #ccff90; padding: 10px; ">
+    <div>
+	<li><a href="">Download data</a></li>
+	<li><a href="{% url 'delete-all' %}">Delete All</a></li>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <canvas id="T/H Graph" width="1200" height="280"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <canvas id="Humidifier Chart" width="1200" height="150"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <canvas id="Fan Chart" width="1200" height="150"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <canvas id="Pump Chart" width="1200" height="150"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <canvas id="Water Level Chart" width="1200" height="150"></canvas>
+    </div>
+  </div>
+
+  <script>
+    new Chart(document.getElementById("T/H Graph"), {
+      type: 'line',
+      data: {
+        labels: [
+          {% for monitor in monitor_list%}"{{ monitor.date }}", {% endfor %}
+        ],
+        datasets: [
+          { 
+            data: [
+              {% for monitor in monitor_list%}{{ monitor.temperature }}, {% endfor %}
+            ],
+            label: "Temperature",
+            borderColor: "#e8c3b9",
+            fill: false
+          }, 
+          { 
+            data: [
+              {% for monitor in monitor_list%}{{ monitor.hummidity }}, {% endfor %}
+            ],
+            label: "Hummidity",
+            borderColor: "#c45850",
+            fill: false
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Temperature and Hummidity'
+        }
+      }
+    });
+
+    new Chart(document.getElementById("Humidifier Chart"), {
+      type: 'bar',
+      data: {
+        labels: [
+          {% for event in event_list%}"{{ event.date }}", {% endfor %}
+        ],
+        datasets: [
+          { 
+            data: [
+              {% for event in event_list%}{% if event.humidifier_event %}1, {% else %}0, {% endif %}{% endfor %}
+            ],
+            label: "On/Off",
+            borderColor: "#e8c3b9",
+            fill: false
+          }, 
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Humidifier On/Off Chart'
+        }
+      }
+    });
+
+    new Chart(document.getElementById("Fan Chart"), {
+      type: 'bar',
+      data: {
+        labels: [
+          {% for event in event_list%}"{{ event.date }}", {% endfor %}
+        ],
+        datasets: [
+          { 
+            data: [
+              {% for event in event_list%}{% if event.fan_event %}1, {% else %}0, {% endif %}{% endfor %}
+            ],
+            label: "On/Off",
+            borderColor: "#e8c3b9",
+            fill: false
+          }, 
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Fan On/Off Chart'
+        }
+      }
+    });
+
+    new Chart(document.getElementById("Pump Chart"), {
+      type: 'bar',
+      data: {
+        labels: [
+          {% for event in event_list%}"{{ event.date }}", {% endfor %}
+        ],
+        datasets: [
+          { 
+            data: [
+              {% for event in event_list%}{% if event.pump_event %}1, {% else %}0, {% endif %}{% endfor %}
+            ],
+            label: "On/Off",
+            borderColor: "#e8c3b9",
+            fill: false
+          }, 
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Water Pump On/Off Chart'
+        }
+      }
+    });
+
+    new Chart(document.getElementById("Water Level Chart"), {
+      type: 'bar',
+      data: {
+        labels: [
+          {% for event in event_list%}"{{ event.date }}", {% endfor %}
+        ],
+        datasets: [
+          { 
+            data: [
+              {% for event in event_list%}{% if event.water_level_event %}1, {% else %}0, {% endif %}{% endfor %}
+            ],
+            label: "On/Off",
+            borderColor: "#e8c3b9",
+            fill: false
+          }, 
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Water Level On/Off Chart'
+        }
+      }
+    });
+  </script>
+{% endblock %}
+

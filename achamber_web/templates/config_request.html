@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  {% load humanize %}
+
+  <div style="width: auto; height: auto; float: left; border-radius: 30px; border: 8px solid #ccff90; padding: 10px; ">
+    <div id="settings" style="white-space:nowrap; overflow:auto; width: auto;">
+      <form action="{% url 'config-request' %}" method="POST" id="search">
+        {% csrf_token %}
+        <table id="purchase_list" style="width: 450px;">
+          {% if result %}
+          <tr>
+            <td colspan="2" style="text-align: center; color: blue;">{{ result }}</td>
+          </tr>
+          {% endif %}
+          {% for config in config_list %}
+          <tr>
+            <th>{{ config.key }}</th><td><input type="text" name="{{ config.key }}" value="{{ config.value }}"/></td>
+          </tr>
+          {% endfor %}
+          <tr>
+            <td colspan="2" align="center"><input type="submit" name="config" value="Apply"/></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+*** Starting uWSGI 2.0.20 (32bit) on [Fri Oct 21 14:45:07 2022] ***
+compiled with version: 10.2.1 20210110 on 06 October 2021 06:05:19
+os: Linux-5.15.32+ #1538 Thu Mar 31 19:37:58 BST 2022
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /
+writing pidfile to /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.pid
+detected binary path: /home/hjung/Achamber/bin/uwsgi
+chdir() to /home/hjung/proj/Achamber/achamber_web
+your processes number limit is 2416
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/hjung/proj/Achamber/achamber_web/tmp/achamber_web.sock fd 4
+Python version: 3.9.2 (default, Mar 12 2021, 04:06:34)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/hjung/Achamber
+Set PythonHome to /home/hjung/Achamber
+Python main interpreter initialized at 0x1d24890
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 128816 bytes (125 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 15 seconds on interpreter 0x1d24890 pid: 311 (default app)
+spawned uWSGI master process (pid: 311)
+spawned uWSGI worker 1 (pid: 492, cores: 1)
+subprocess 334 exited with code 0
+[pid: 492|app: 0|req: 1/1] 192.168.1.59 () {42 vars in 826 bytes} [Fri Oct 28 14:28:25 2022] GET / => generated 4316 bytes in 1723 msecs (HTTP/1.1 200) 8 headers in 358 bytes (2 switches on core 0)
+[pid: 492|app: 0|req: 2/2] 192.168.1.59 () {42 vars in 721 bytes} [Fri Oct 28 14:28:26 2022] GET /admin/jsi18n/ => generated 3343 bytes in 310 msecs (HTTP/1.1 200) 7 headers in 230 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 492|app: 0|req: 3/3] 192.168.1.59 () {42 vars in 778 bytes} [Fri Oct 28 14:28:27 2022] GET /favicon.ico => generated 3046 bytes in 305 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 4/4] 192.168.1.59 () {44 vars in 878 bytes} [Fri Oct 28 14:28:34 2022] GET /monitor/ => generated 25698 bytes in 1045 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 5/5] 192.168.1.59 () {42 vars in 729 bytes} [Fri Oct 28 14:28:35 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 6/6] 192.168.1.59 () {42 vars in 826 bytes} [Fri Oct 28 14:30:31 2022] GET / => generated 4316 bytes in 200 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 7/7] 192.168.1.59 () {42 vars in 721 bytes} [Fri Oct 28 14:30:31 2022] GET /admin/jsi18n/ => generated 3343 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 8/8] 192.168.1.59 () {44 vars in 876 bytes} [Fri Oct 28 14:30:38 2022] GET /config/ => generated 4629 bytes in 197 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 492|app: 0|req: 9/9] 192.168.1.59 () {42 vars in 728 bytes} [Fri Oct 28 14:30:38 2022] GET /admin/jsi18n/ => generated 3343 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)

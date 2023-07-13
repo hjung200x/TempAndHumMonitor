@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block head %}
+{% if enforce_watering.value == '1' %}
+  <meta http-equiv="refresh" content="1; url={% url 'watering-request' %}">
+{% endif %}
+{% endblock %}
+
+{% block content %}
+  {% load humanize %}
+  <div class="home" style="width: 1200px; height: 700px; vertical-align: middle;">
+    <div class="operation" style="width: auto; height: auto; float: left; border-radius: 30px; border: 8px solid #ffcc80; white-space:nowrap; padding: 30px;">
+      <form action="{% url 'watering-request' %}" method="POST" id="watering">
+        {% csrf_token %}
+        <p style="text-align: center;">
+        <label class="toggleSwitch xlarge" onclick="">
+              <input type="checkbox" name="watering" onchange="this.form.submit()" {% if enforce_watering.value == '1' %}checked{% endif %} />
+              <span>
+                  <span>Stop</span>
+                  <span>Watering</span>
+              </span>
+              <a></a>
+          </label>
+      </p>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+

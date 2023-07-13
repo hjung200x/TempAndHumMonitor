@@ -1,0 +1,17 @@
+[Unit]
+Description=AChamber Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/hjung/proj/Achamber/control
+Environment=PATH=/home/hjung/Achamber/bin:$PATH
+ExecStart=/home/hjung/Achamber/bin/python3 /home/hjung/proj/Achamber/control/main.py
+StandardOutput=append:/home/hjung/proj/Achamber/control/output.log
+StandardError=append:/home/hjung/proj/Achamber/control/error.log
+
+[Install]
+WantedBy=multi-user.target
+
