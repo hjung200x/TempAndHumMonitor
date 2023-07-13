@@ -7,11 +7,6 @@ from datetime import datetime
 from DFRobot_SHT3X import *
 
 GPIO_PIN_TempAndHumiditySensor = 24
-GPIO_PIN_CoolFan = 27
-GPIO_PIN_WaterPump = 18
-GPIO_PIN_WaterLevelSensor = 26
-GPIO_PIN_Humidifier1 = 22
-GPIO_PIN_Humidifier2 = 23
 
 class Config:
     def __init__(self):
