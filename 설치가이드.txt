@@ -66,17 +66,10 @@ $ sudo systemctl enable achamber.service
 $ sudo systemctl start achamber.service
 
 
-[방화벽 포트 추가하기]
+[방화벽 포트 추가하기 - 옵션, 안해도됨]
 $ sudo apt install ufw
 $ sudo ufw allow 22
 $ sudo ufw allow 'Nginx Full'
 $ sudo ufw enable
-
-[DB에 config 항목 추가]
-The duration of humidifier on		5
-The duration of humidifier off		3
-Enforce to run humidifier			1
-
-https://wikidocs.net/6611
 
 
