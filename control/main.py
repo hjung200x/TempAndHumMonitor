@@ -37,6 +37,54 @@ class Config:
         db_conn.commit()
         db_conn.close()
 
+class Status:
+    def __init__(self):
+        db_conn = sqlite3.connect('/home/hjung/proj/Achamber/db/db.sqlite3')
+        cur = db_conn.cursor()
+        cur.execute("SELECT * FROM status_status")
+        self.status = dict((x, y) for x, y in cur)
+        db_conn.close()
+
+    def update(self, start=False, end=False):
+        if (start):
+            self.status['run'] = '1'
+            self.status['start_time'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        elif (end):
+            self.status['run'] = '0'
+            self.status['end_time'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        else:
+            pass
+        v = [(name, value) for name, value in self.status.items()]
+        db_conn = sqlite3.connect('/home/hjung/proj/Achamber/db/db.sqlite3')
+        cur = db_conn.cursor()
+        for row in v:
+            cur.execute("UPDATE status_status SET value = ? WHERE name = ?", (row[1], row[0]))
+        db_conn.commit()
+        db_conn.close()
+
+class Operation:
+    def __init__(self, status) -> None:
+        self.status = status
+
+        self.is_operation = False
+
+    def start(self):
+        if (self.is_operation == False):
+            now = datetime.now()
+            print('[{}] Operation Start...'.format(now))
+            sys.stdout.flush()
+            self.status.update(start=True)
+            self.is_operation = True
+
+    def stop(self):
+        if (self.is_operation == True):
+            now = datetime.now()
+            print('[{}] Operation Stop...'.format(now))
+            sys.stdout.flush()
+
+            self.status.update(end=True)
+            self.is_operation = False
+
 class RecordingTandH:
     def __init__(self):
         '''
@@ -97,14 +145,29 @@ def main():
     sys.stdout.flush()
     config = Config()
     record = RecordingTandH()
+    status = Status()
+    operation = Operation(status)
     t_h_sensor = SHT31_F_TempAndHumiditySensor()
     
     while (1):
         try:
+
+            while (config.config['Operate chamber(0 - stop, 1 - run)'] == '0'):
+                operation.stop()
+                config.refresh()
+                time.sleep(1)
+
+            if (operation.is_operation == False):
+                operation.start()
+                start_time = time.time()
+
             config.refresh()
 
             temperature, humidity = t_h_sensor.poll()
-            record.record(temperature, humidity)
+
+            if (time.time() - start_time >= int(config.config['The interval time of recording T and H'])):
+                record.record(temperature, humidity)
+                start_time = time.time()
 
             time.sleep(int(config.config['The interval time of probing T and H']))
         
